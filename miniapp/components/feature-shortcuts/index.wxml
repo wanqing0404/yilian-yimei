@@ -1,0 +1,1 @@
+<view class="feature-shortcuts"><button wx:for="{{items}}" wx:key="page" class="feature-shortcut" data-page="{{item.page}}" bindtap="open" aria-label="{{item.label}}"><view class="feature-icon-box"><ui-icon name="{{item.icon}}" size="47"></ui-icon></view><text>{{item.label}}</text></button></view>

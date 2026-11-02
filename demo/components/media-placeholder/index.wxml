@@ -1,0 +1,1 @@
+<view class="media {{kind}}"><image wx:if="{{src}}" src="{{src}}" mode="{{fit}}" class="media-image {{fit === 'aspectFit' ? 'contain-image' : ''}}"></image><view wx:else class="media-label"><block wx:if="{{!blank}}"><ui-icon name="image" size="42"></ui-icon><text>{{label}}</text></block></view></view>

@@ -1,0 +1,3 @@
+const remote=require('../../utils/remote');
+const campaigns=require('../../utils/campaigns');const store=require('../../utils/store');
+Page(remote.page({data:{coupons:[],claimedCount:0},onShow(){this.refresh();},refresh(){const claimed=store.read().coupons;this.setData({claimedCount:store.availableCoupons().length,coupons:campaigns.coupons.map(c=>Object.assign({},c,{claimed:claimed.some(x=>x.id===c.id)}))});},claim(e){remote.request('customer/coupon/claim','POST',{offerId:e.currentTarget.dataset.id}).then(()=>remote.refresh()).then(()=>{this.refresh();wx.showToast({title:'领取成功',icon:'success'});}).catch(e=>wx.showToast({title:e.message,icon:'none'}));},mine(){wx.navigateTo({url:'/pages/records/index?type=coupons'});}}));

@@ -1,0 +1,42 @@
+{
+  "description": "医联·好美原生微信小程序页面框架",
+  "projectname": "yilian-haomei",
+  "appid": "touristappid",
+  "compileType": "miniprogram",
+  "miniprogramRoot": "./",
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "minified": true,
+    "postcss": true,
+    "urlCheck": true
+  },
+  "packOptions": {
+    "ignore": [
+      {
+        "type": "folder",
+        "value": "preview"
+      },
+      {
+        "type": "file",
+        "value": "README.md"
+      },
+      {
+        "type": "file",
+        "value": "assets/images/home-portrait.jpg"
+      },
+      {
+        "type": "file",
+        "value": "assets/decor/default-avatar.png"
+      },
+      {
+        "type": "file",
+        "value": "assets/decor/default-avatar.svg"
+      },
+      {
+        "type": "folder",
+        "value": "assets/icons/sources"
+      }
+    ]
+  }
+}

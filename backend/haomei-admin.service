@@ -1,0 +1,24 @@
+[Unit]
+Description=Haomei operations portal
+After=network.target
+
+[Service]
+Type=simple
+User=haomeiops
+Group=haomeiops
+WorkingDirectory=/opt/haomei-admin/current
+EnvironmentFile=/etc/haomei-admin/environment
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/usr/bin/python3.11 /opt/haomei-admin/current/online_server.py --port 18966
+Restart=on-failure
+RestartSec=3
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/haomei-admin
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target

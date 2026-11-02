@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily Haomei operations database backup
+
+[Timer]
+OnCalendar=*-*-* 03:30:00
+Persistent=true
+Unit=haomei-admin-backup.service
+
+[Install]
+WantedBy=timers.target

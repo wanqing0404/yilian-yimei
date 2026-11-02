@@ -1,0 +1,8 @@
+[Unit]
+Description=Private Haomei operations database backup
+After=haomei-admin.service
+
+[Service]
+Type=oneshot
+UMask=0077
+ExecStart=/usr/bin/python3.11 /opt/haomei-admin/current/backup_database.py

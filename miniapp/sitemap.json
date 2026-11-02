@@ -1,0 +1,9 @@
+{
+  "desc": "页面框架示例",
+  "rules": [
+    {
+      "action": "disallow",
+      "page": "*"
+    }
+  ]
+}

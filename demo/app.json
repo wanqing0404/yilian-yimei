@@ -1,0 +1,79 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/category/index",
+    "pages/service/index",
+    "pages/cart/index",
+    "pages/profile/index",
+    "pages/detail/index",
+    "pages/booking/index",
+    "pages/records/index",
+    "pages/doctor-detail/index",
+    "pages/flash-sale/index",
+    "pages/group-buy/index",
+    "pages/consult/index",
+    "pages/coupon-center/index",
+    "pages/points-mall/index",
+    "pages/aftercare/index",
+    "pages/arrival/index",
+    "pages/treatment/index",
+    "pages/my-projects/index",
+    "pages/group-detail/index",
+    "pages/welfare/index",
+    "pages/point-flash/index",
+    "pages/member-center/index"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundColor": "#f6f8fc",
+    "backgroundTextStyle": "dark",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "brand-header": "/components/brand-header/index",
+    "ui-icon": "/components/ui-icon/index",
+    "media-placeholder": "/components/media-placeholder/index",
+    "feature-shortcuts": "/components/feature-shortcuts/index"
+  },
+  "tabBar": {
+    "color": "#788091",
+    "selectedColor": "#5355ff",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "assets/icons/grid.png",
+        "selectedIconPath": "assets/icons/grid-active.png"
+      },
+      {
+        "pagePath": "pages/service/index",
+        "text": "服务",
+        "iconPath": "assets/icons/heart.png",
+        "selectedIconPath": "assets/icons/heart-active.png"
+      },
+      {
+        "pagePath": "pages/member-center/index",
+        "text": "会员",
+        "iconPath": "assets/icons/member.png",
+        "selectedIconPath": "assets/icons/member-active.png"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的",
+        "iconPath": "assets/icons/user.png",
+        "selectedIconPath": "assets/icons/user-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,1 @@
+<image class="ui-icon" style="width:{{size}}rpx;height:{{size}}rpx" src="/assets/icons/{{name}}{{active ? '-active' : ''}}.png" mode="aspectFit" aria-hidden="true"></image>
