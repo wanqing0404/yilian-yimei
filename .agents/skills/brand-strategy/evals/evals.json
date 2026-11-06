@@ -1,0 +1,105 @@
+{
+  "skill_name": "brand-strategy",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're rebranding from the ground up. Help us figure out what our brand should feel like. We make accounting software for freelancers.",
+      "expected_output": "Should name the depth as Revolution and run the discovery arc conversationally, one question at a time (not a dumped questionnaire). Should push hard for specificity and reject marketing-speak. Should drive the muse exercise toward stealable VISUAL cues, including muses outside the category. Should land on a specific, sensory Emotional Target (Big Three) and define the Fixed core vs. flexible range. Should aim toward three distinct creative concepts for the handoff to creative-direction, and note the output goes into .agents/brand.md.",
+      "assertions": [
+        "Names the depth (Revolution)",
+        "Runs discovery one question at a time, not all at once",
+        "Pushes for specificity / rejects marketing-speak",
+        "Drives muses to stealable visual cues",
+        "Produces a specific, sensory Emotional Target",
+        "Defines fixed core vs. flexible range",
+        "Heads toward three distinct concepts and writes to .agents/brand.md",
+        "Coaches answers out of the client; never substitutes its own answer for a thin one",
+        "Shows muses as fetched images (muse board), not just names; records image sources in the working doc",
+        "Converges via reflective hypotheses (mirrors a specific 'feel more ___' read for confirm/correct), not by listing options",
+        "Opens by taking inventory of brand.md/product-marketing.md \u2014 confirms already-answered questions (vision, user, competitors) and coaches only the remaining ones; assesses visual input and sets the looking-not-just-talking mode up front"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Here's a muse for our brand: Patagonia, because they really care about the environment and so do we.",
+      "expected_output": "Should flag this as a muse named for its mission, not its visual look (the 'muse with no visual' trigger). Should redirect: what would we actually STEAL visually from Patagonia \u2014 the earthy muted palette, the documentary photography style, the utilitarian type, the worn-in texture? Should insist that without a stealable visual cue it isn't a usable muse, while staying encouraging and curious rather than dismissive.",
+      "assertions": [
+        "Flags that the muse is mission-based, not visual",
+        "Redirects to a stealable visual cue (palette, photography, type, texture)",
+        "Insists on visual relevance to count as a muse",
+        "Stays encouraging / curious, not dismissive",
+        "Fetches and shows actual Patagonia imagery to confirm which visual carries the feeling",
+        "Treats a muse as a feeling-source, not a favorite: checks 'does it make you feel the target feeling?' and asks muses anchored to the confirmed feeling"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our brand is basically fine, we just think the website looks cheap. Do we need to do brand strategy?",
+      "expected_output": "Should diagnose this as Optimization, not Revolution \u2014 the foundation is solid, the execution is poor. Should advise that brand strategy is not needed at all for an Optimization \u2014 what they need is design help later, when the actual assets are executed \u2014 and point toward fixing the execution in the relevant medium (web-design) and consulting the existing brand context. Should match effort to depth: at most a quick emotional-target read if none exists yet, never a full workshop.",
+      "assertions": [
+        "Diagnoses the depth as Optimization",
+        "Advises against full brand strategy here",
+        "Warns about throwing away equity by over-scoping",
+        "Points toward fixing execution (web-design) instead",
+        "Offers at most the quick emotional-target read, not a full workshop"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "We ran the brand audit \u2014 .agents/brand.md says we're an Evolution keeping our logo and navy (fixed core), and the deltas are: no motif, generic typography, and an accent color that collides with a rival. Run the strategy.",
+      "expected_output": "Should read .agents/brand.md and enter DELTAS-ONLY mode: treat the kept logo and navy as given constraints, not questions \u2014 must not re-run full discovery or ask the client to re-justify kept equity. Should first define/confirm one Emotional Target (Big Three) so the deltas share a feeling, then run only the arc sections the deltas need (muses scoped to motif character, competitive landscape scoped to the new accent's territory, personality scoped to typographic character). Should check the kept logo can plausibly live inside the new emotional target and flag any tension now. Emotional target must be design-drivable (specific enough to reject options), not adjectives.",
+      "assertions": [
+        "Enters deltas-only mode from .agents/brand.md; does not re-run full discovery",
+        "Treats the kept logo and navy as given constraints, not questions",
+        "Defines/confirms one Emotional Target before working the deltas",
+        "Scopes discovery to the named deltas (motif, type, accent territory)",
+        "Checks the kept equity against the new emotional target and flags tension",
+        "Pushes the emotional target to be design-drivable, not adjectives"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We're doing a full rebrand of our developer-tools startup. Can you just give me a list of muses and a direction to run with? I don't really want to do a whole workshop thing.",
+      "expected_output": "Should NOT list muses or propose a direction out of the gate. Should explain briefly why self-surfaced muses beat suggested ones (muses are the client's own emotional reference points \u2014 a suggested muse is the coach's taste wearing their brand) and OFFER the deeper path first, framed as fast and low-friction (a few questions, one at a time). Only if the client declines again should it generate ideas \u2014 clearly framed as starting points to react to rather than answers, anchored to whatever emotional target exists, and it should treat the client's reactions as discovery material.",
+      "assertions": [
+        "Does not list muses or a direction immediately",
+        "Explains why self-surfaced muses beat suggested ones",
+        "Offers the deeper exercise first, framed as fast (a few questions, one at a time)",
+        "Generates ideas only after a second decline, framed as reaction-starters not answers",
+        "Uses the client's reactions to the ideas as discovery material"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "We don't have time for a big brand workshop \u2014 we're an established B2B tool just refreshing our visuals. Can you quickly help us nail what our brand should feel like so the designer has something to aim at?",
+      "expected_output": "Should run THE QUICK READ, not the full workshop \u2014 no muse board, no three concepts. Should converge on a single design-drivable emotional target by REFLECTION: ask what they want people to feel, then mirror back a specific 'feel more ___' hypothesis and refine against their reactions (push 'calm' to 'calm like a cockpit vs a monastery' until it could reject a color/typeface). Should NOT throw a list of adjectives for them to pick, and should NOT fabricate a feeling with no input. Should write the confirmed emotional target to .agents/brand.md, note it's a quick read (not full discovery), and hand off to creative-direction.",
+      "assertions": [
+        "Runs the quick read, not the full workshop (no muse board / three concepts)",
+        "Converges by reflection \u2014 mirrors a specific 'feel more ___' hypothesis, refines against reactions",
+        "Pushes the feeling until it is design-drivable (specific enough to reject a color/typeface)",
+        "Does not list adjectives to pick from, and does not fabricate a feeling without input",
+        "Writes the emotional target to .agents/brand.md and hands to creative-direction; notes it's a quick read",
+        "May seed a first feeling-guess from .agents/product-marketing.md but flags it as generic \u2014 a stab to push off, never the answer"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Okay, we nailed the feeling \u2014 you want people to feel 'quietly in command, like a pilot at cruising altitude.' But honestly I'm blanking on references. I can't think of anything that makes me feel that.",
+      "expected_output": "The feeling is locked, and the founder is stuck \u2014 so the skill should SUGGEST options for them to react to (legitimate here because the feeling is set and the reaction selects). Suggestions must be anchored to 'quietly in command / pilot at cruising altitude,' deliberately VARIED (pull from different worlds \u2014 a cockpit, a particular film's control-room palette, a watch, an instrument panel, an architect's studio), shown as IMAGES not just names, and run past the escape-the-trend lens (not the generic AI/SaaS default). When one lands, it should dig into WHY ('what about this is the feeling?') to convert the candidate into the founder's own captured cue, and keep pulling rather than stopping at the first lukewarm 'sure.' Should also use what they react against.",
+      "assertions": [
+        "Suggests options only after the feeling is locked, framed as reaction-starters",
+        "Anchors every suggestion to the confirmed feeling, not general taste; avoids the category/AI default",
+        "Suggestions are varied across different worlds and shown as images",
+        "Digs into WHY a landed suggestion is the feeling, converting it into the founder's captured cue",
+        "Keeps pulling past the first 'sure'; uses reactions-against as signal"
+      ],
+      "files": []
+    }
+  ]
+}

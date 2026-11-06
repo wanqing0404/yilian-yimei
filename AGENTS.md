@@ -45,3 +45,12 @@ python3 .agents/skills/ui-ux-pro-max/scripts/search.py "keyboard focus modal" --
 可明确请求 `$ui-ux-pro-max`、`$frontend-design`、`$web-design-guidelines`，也可直接用中文名称说明任务。支持项目 `.agents/skills` 的宿主重载后应发现它们；当前会话菜单是否动态刷新无法由文件安装保证，未发现时按上面路径直接读取。
 
 安装来源、版本、验证结果及调用示例见 `docs/ui-design-skills/README.md`。
+
+## 追加的设计与工作流技能
+用户追加指定的 zstvns/design-skills（8 个）、rampstackco/claude-skills（107 个，Codex 发行版）、moesuito/claude-skill-design-md（design-md）已按固定版本安装到 `.agents/skills/`。按任务读取对应 SKILL.md，不因安装而执行全部流程。现有 UI 三阶段流程及 VI、产品原图、平台适配和业务保护规则继续优先。
+
+`creative-direction`、`logo-design` 属于 zstvns；RampStack 版本使用 `rampstack-creative-direction`、`rampstack-logo-design`。阅读 RampStack 技能内部对旧名称的引用时映射至这两个 RampStack 名称，避免混用来源。
+
+`design-md` 只在明确要求整理设计文档时使用：先读取已确认 VI，标明证据/待确认项，不把源码现状认定为品牌定稿，不擅自创建或覆盖 DESIGN.md。Web、SEO、营销、发布和运维规则不能机械套到原生微信小程序；外部连接和脚本需根据实际任务核实，安装本身不授权发布、部署或业务改动。
+
+完整来源、重名说明、使用示例和验证见 `docs/ui-design-skills/EXTRA-INSTALL.md`。
