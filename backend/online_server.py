@@ -42,7 +42,7 @@ def public_image(path):
 def catalogue(db):
     rules=d.get(db,'rules','main')
     products=[]
-    fields={'id','name','category','tags','desc','image','hot','price','listPrice','memberPrice','limit','priceType','stock','paid','detailTitle','rules'}
+    fields={'id','name','category','tags','desc','image','hot','price','pointsPrice','listPrice','memberPrice','limit','priceType','stock','paid','detailTitle','rules'}
     for p in sorted(d.rows(db,'products'),key=lambda x:x.get('sortOrder',999)):
         if p.get('status')!='published':continue
         item={k:v for k,v in p.items() if k in fields}
