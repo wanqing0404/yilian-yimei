@@ -6,7 +6,6 @@
     "pages/cart/index",
     "pages/profile/index",
     "pages/detail/index",
-    "pages/booking/index",
     "pages/records/index",
     "pages/doctor-detail/index",
     "pages/flash-sale/index",
@@ -20,8 +19,10 @@
     "pages/my-projects/index",
     "pages/group-detail/index",
     "pages/welfare/index",
+    "pages/order-lottery/index",
     "pages/point-flash/index",
-    "pages/member-center/index"
+    "pages/member-center/index",
+    "pages/shortcut-list/index"
   ],
   "window": {
     "navigationStyle": "custom",

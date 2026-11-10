@@ -1,0 +1,1 @@
+<view class="page"><brand-header title="全部服务" back="{{true}}"></brand-header><view class="pad"><view class="panel shortcut-list-panel"><view class="section-title">全部服务</view><feature-shortcuts entries="{{shortcuts}}" expanded="{{true}}"></feature-shortcuts></view></view></view>

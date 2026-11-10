@@ -1,19 +1,32 @@
 const catalogue = require('./data');
 const campaigns = require('./campaigns');
 const KEY='haomei_share_client_v1';
-const defaults=()=>({city:'北京',cart:[],orders:[],appointments:[],profile:{name:'小美同学',phone:'138****6688'},points:2860,giftBalance:0,treatmentPlans:[],ownedProjects:[],coupons:[],groups:[],consultMessages:[],flashEndsAt:0,groupActivityEndsAt:0,groupDemoEndsAt:0,redemptions:[],pointTransactions:[{id:'initial',title:'初始展示积分',amount:2860}],careChecks:{},careNotes:[]});
+const defaults=()=>({city:'北京',cart:[],orders:[],profile:{name:'小美同学',phone:'138****6688'},points:2860,giftBalance:0,treatmentPlans:[],ownedProjects:[],coupons:[],groups:[],consultMessages:[],flashEndsAt:0,groupActivityEndsAt:0,groupDemoEndsAt:0,redemptions:[],pointTransactions:[{id:'initial',title:'初始展示积分',amount:2860}],careChecks:{},careNotes:[]});
 function read(){try{const state=Object.assign(defaults(),wx.getStorageSync(KEY)||{});if(!catalogue.clinics.some(c=>c.city===state.city))state.city=catalogue.clinics[0].city;return state;}catch(e){return defaults();}}
 function save(state){wx.setStorageSync(KEY,state);refreshBadge(state);require('./remote').syncOrders(state.orders);return state;}
 function money(cents){return (cents/100).toFixed(2).replace(/\.00$/,'');}
+function priceLabel(product,formatCash=money){
+  if(product.pricePending)return '价格待确认';
+  if(product.price===0)return product.pointsPrice>0?product.pointsPrice+' 积分':'积分待确认';
+  const cash='¥'+formatCash(product.price);
+  return product.pointsPrice>0?product.pointsPrice+' 积分 + '+cash:cash;
+}
+function productThumbnail(image){
+  if(!image)return '';
+  return image.replace(/^(\/assets\/products\/head-20261103-\d{2})\.jpg$/, '$1-thumb.jpg');
+}
+function priceParts(label){
+  if(label==='积分待确认')return [label];
+  return label.split(/(¥|积分|\+)/).filter(Boolean);
+}
 function refreshBadge(){}
 function setCity(city){const s=read();s.city=city;save(s);}
-function addCart(id){const p=catalogue.products.find(x=>x.id===id);if(!p||p.hidden||p.pricePending){wx.showToast({title:'该商品暂不可购买',icon:'none'});return false;}const s=read();const item=s.cart.find(x=>x.id===id);if(item)item.quantity=Math.min(p.limit||99,item.quantity+1);else s.cart.push({id,quantity:1,selected:true});save(s);}
-function cartItems(){return read().cart.map(x=>{const p=catalogue.products.find(p=>p.id===x.id);return p?Object.assign({},p,x,{displayPrice:money(p.price),subtotal:money(p.price*x.quantity)}):null;}).filter(Boolean);}
+function addCart(id){const p=catalogue.products.find(x=>x.id===id);if(p&&(p.price===0||p.pointsPrice)){wx.showToast({title:'积分商品暂未开放结算',icon:'none'});return false;}if(!p||p.hidden||p.pricePending){wx.showToast({title:'该商品暂不可购买',icon:'none'});return false;}const s=read();const item=s.cart.find(x=>x.id===id);if(item)item.quantity=Math.min(p.limit||99,item.quantity+1);else s.cart.push({id,quantity:1,selected:true});save(s);}
+function cartItems(){return read().cart.map(x=>{const p=catalogue.products.find(p=>p.id===x.id);return p?Object.assign({},p,x,{displayPrice:priceLabel(p),subtotal:money(p.price*x.quantity)}):null;}).filter(Boolean);}
 function updateCart(id,patch){const product=catalogue.products.find(p=>p.id===id);if(patch.quantity&&product&&product.limit)patch.quantity=Math.min(product.limit,patch.quantity);const s=read();s.cart=s.cart.map(x=>x.id===id?Object.assign({},x,patch):x).filter(x=>x.quantity>0);save(s);}
 function selectAll(selected){const s=read();s.cart=s.cart.map(x=>Object.assign({},x,{selected}));save(s);}
-function checkout(){const s=read();const selected=cartItems().filter(x=>x.selected);if(!selected.length)return null;if(selected.some(x=>x.hidden||x.pricePending)){wx.showToast({title:'部分商品价格待确认或已下架',icon:'none'});return null;}const order={id:'DEMO'+Date.now(),createdAt:Date.now(),status:'待付款',items:selected,total:selected.reduce((v,x)=>v+x.price*x.quantity,0)};s.orders.unshift(order);s.cart=s.cart.filter(x=>!x.selected);save(s);return order;}
-function directOrder(id){const p=catalogue.products.find(x=>x.id===id);if(!p||p.hidden||p.pricePending)return null;const s=read();const order={id:'DEMO'+Date.now(),createdAt:Date.now(),status:'待付款',items:[Object.assign({},p,{quantity:1,displayPrice:money(p.price)})],total:p.price};s.orders.unshift(order);save(s);return order;}
-function book(data){const s=read();const record=Object.assign({},data,{id:'BOOK'+Date.now(),status:'待确认',createdAt:Date.now()});s.appointments.unshift(record);save(s);return record;}
+function checkout(){const s=read();const selected=cartItems().filter(x=>x.selected);if(!selected.length)return null;if(selected.some(x=>x.price===0||x.pointsPrice)){wx.showToast({title:'积分商品暂未开放结算，请先取消勾选',icon:'none'});return null;}if(selected.some(x=>x.hidden||x.pricePending)){wx.showToast({title:'部分商品价格待确认或已下架',icon:'none'});return null;}const order={id:'DEMO'+Date.now(),createdAt:Date.now(),status:'待付款',items:selected,total:selected.reduce((v,x)=>v+x.price*x.quantity,0)};s.orders.unshift(order);s.cart=s.cart.filter(x=>!x.selected);save(s);return order;}
+function directOrder(id){const p=catalogue.products.find(x=>x.id===id);if(!p||p.price===0||p.pointsPrice||p.hidden||p.pricePending)return null;const s=read();const order={id:'DEMO'+Date.now(),createdAt:Date.now(),status:'待付款',items:[Object.assign({},p,{quantity:1,displayPrice:money(p.price)})],total:p.price};s.orders.unshift(order);save(s);return order;}
 
 function uniqueId(prefix){return prefix+Date.now()+Math.random().toString(36).slice(2,7);}
 function flashEnd(){const s=read();if(!s.flashEndsAt){s.flashEndsAt=Date.now()+2*60*60*1000;save(s);}return s.flashEndsAt;}
@@ -36,4 +49,4 @@ function redeemPoints(id){const offer=campaigns.pointsOffers.find(x=>x.id===id);
 function toggleCare(date,task){if(['plan','record','review'].indexOf(task)<0)return;const s=read();const checks=s.careChecks[date]||[];s.careChecks[date]=checks.indexOf(task)>-1?checks.filter(x=>x!==task):checks.concat(task);save(s);}
 function saveCareNote(date,note){const content=(note||'').trim().slice(0,300);if(!content)return false;const s=read();const existing=s.careNotes.find(x=>x.date===date);if(existing){existing.note=content;existing.updatedAt=Date.now();}else s.careNotes.unshift({id:uniqueId('CARE'),date,note:content,updatedAt:Date.now()});const checks=s.careChecks[date]||[];if(checks.indexOf('record')===-1)s.careChecks[date]=checks.concat('record');save(s);return true;}
 
-module.exports={read,save,money,setCity,addCart,cartItems,updateCart,selectAll,checkout,directOrder,book,refreshBadge,flashEnd,flashOrder,createGroup,simulateJoin,claimCoupon,availableCoupons,saveMessages,redeemPoints,toggleCare,saveCareNote,groupActivityEnd,groupOrderFor,joinDemoGroup,groupSingleOrder};
+module.exports={read,save,money,priceLabel,priceParts,productThumbnail,setCity,addCart,cartItems,updateCart,selectAll,checkout,directOrder,refreshBadge,flashEnd,flashOrder,createGroup,simulateJoin,claimCoupon,availableCoupons,saveMessages,redeemPoints,toggleCare,saveCareNote,groupActivityEnd,groupOrderFor,joinDemoGroup,groupSingleOrder};

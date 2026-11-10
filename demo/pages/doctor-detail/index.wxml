@@ -3,21 +3,18 @@
   <view wx:if="{{doctor}}" class="doctor-detail-content">
     <view class="panel doctor-profile">
       <view class="doctor-profile-top">
-        <view class="doctor-profile-photo"><image class="doctor-portrait portrait-{{doctor.id}}" src="{{doctor.image}}" mode="aspectFill"></image></view>
+        <view class="doctor-profile-photo"><image wx:if="{{doctor.image}}" class="doctor-portrait portrait-{{doctor.id}}" src="{{doctor.image}}" mode="aspectFit"></image><media-placeholder wx:else label="医生头像" kind="doctor"></media-placeholder></view>
         <view class="doctor-profile-info">
-          <view class="doctor-profile-name">{{doctor.name}}</view>
-          <view class="doctor-profile-title">{{doctor.title}}</view>
+          <view class="doctor-profile-name">{{doctor.name}}</view><text wx:if="{{clinicTag}}" class="doctor-clinic-tag">{{clinicTag}}</text>
           <view wx:if="{{doctor.experience}}" class="doctor-experience"><ui-icon name="shield" active="{{true}}" size="28"></ui-icon><text>{{doctor.experience}}</text></view>
-          <view class="doctor-profile-specialty">{{doctor.specialty}}</view>
+          <view wx:if="{{doctor.posterQuote}}" class="doctor-profile-specialty">{{doctor.posterQuote}}</view>
         </view>
       </view>
-      <view class="doctor-approach">{{doctor.approach}}</view>
     </view>
-    <view class="panel doctor-section">
+    <view wx:if="{{doctor.introduction}}" class="panel doctor-section">
       <view class="section-title">医生简介</view>
       <view class="doctor-introduction">{{doctor.introduction}}</view>
     </view>
-    <view class="panel doctor-section doctor-certification"><view class="between"><view class="doctor-certification-title"><ui-icon name="shield" size="34"></ui-icon><text class="section-title">医生认证</text></view><text class="doctor-certification-status">资料待核验</text></view><view class="doctor-certification-row"><text>医师资格证</text><text>{{doctor.qualification || '待机构提供'}}</text></view><view class="doctor-certification-row"><text>医师执业证</text><text>{{doctor.license || '待机构提供'}}</text></view><view class="doctor-certification-row"><text>执业机构</text><text>{{doctor.certInstitution || '待机构核验'}}</text></view><view class="doctor-certification-note">认证资料由机构提供并核验后展示</view></view>
     <view wx:if="{{doctor.certifications.length}}" class="panel doctor-section">
       <view class="section-title">项目认证</view>
       <view class="doctor-project-cert" wx:for="{{doctor.certifications}}" wx:key="*this"><view class="cert-dot"></view><text>{{item}}</text></view>
@@ -27,6 +24,18 @@
     <view class="panel doctor-section">
       <view class="section-title">擅长方向</view>
       <view class="doctor-focus-list"><text wx:for="{{doctor.focus}}" wx:key="*this" class="doctor-focus-tag">{{item}}</text></view>
+    </view>
+    <view class="panel doctor-section schedule-calendar">
+      <view class="schedule-heading"><text class="schedule-month">{{monthNumber}}</text>月坐诊日期</view>
+      <view class="schedule-week"><text wx:for="{{weekdays}}" wx:key="*this">{{item}}</text></view>
+      <view class="schedule-grid">
+        <view wx:for="{{calendar.days}}" wx:key="key" class="schedule-cell {{!item.day ? 'outside' : item.label === '公休' ? 'holiday' : item.label === '休息' ? 'rest' : item.label === '坐诊' ? 'working' : ''}}">
+          <text>{{item.day}}</text><text wx:if="{{item.label}}">{{item.label}}</text>
+          <text wx:if="{{item.detail}}" class="schedule-detail">{{item.detail}}</text>
+        </view>
+      </view>
+      <view wx:if="{{!calendar.hasSchedule}}" class="doctor-schedule-text">本月坐诊时间待公布</view>
+      <view wx:if="{{calendar.notes}}" class="doctor-schedule-text">{{calendar.notes}}</view>
     </view>
     <view class="panel doctor-section">
       <view class="between"><text class="section-title">咨询院区</text><button class="more" bindtap="viewClinics">全部院区<ui-icon name="chevron" size="22"></ui-icon></button></view>
@@ -41,7 +50,7 @@
       <view class="doctor-step" wx:for="{{consultationSteps}}" wx:key="number"><view class="doctor-step-number">{{item.number}}</view><view><view class="doctor-step-title">{{item.title}}</view><view class="doctor-step-description">{{item.description}}</view></view></view>
     </view>
     <view class="notice doctor-demo-note">医生介绍及项目认证根据机构提供的资料整理，实际坐诊安排以机构确认为准。</view>
-
+    
   </view>
   <view wx:else class="empty"><view class="empty-title">暂未找到医生资料</view><text>请返回服务页重新选择医生</text><button class="primary-button" bindtap="goService">返回医生列表</button></view>
 </view>

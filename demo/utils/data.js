@@ -11,7 +11,7 @@ const products = [
     "price": 99900,
     "listPrice": 99900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-08.jpg",
+    "image": "/assets/products/head-20261103-08.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -23,7 +23,8 @@ const products = [
     "sourceSequence": 15,
     "sourceRow": 2,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "主要功效\n疏通毛孔：水杨酸是脂溶性的，能深入毛囊溶解油脂和角栓，对闭口、黑头、粉刺有明显改善。\n抗炎抑菌：对红肿痘、炎性丘疹有抑制作用，能减轻痘痘的红肿。\n控油调理：调节油脂分泌，减少毛孔堵塞，适合油痘肌长期维稳。\n促进角质代谢：改善皮肤粗糙、暗沉，让皮肤摸起来更光滑细腻。"
   },
   {
     "id": "imp20261102-016",
@@ -34,7 +35,7 @@ const products = [
     "price": 198000,
     "listPrice": 198000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-20.jpg",
+    "image": "/assets/products/head-20261103-20.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -46,7 +47,8 @@ const products = [
     "sourceSequence": 16,
     "sourceRow": 3,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "核心成分：非交联透明质酸钠（玻尿酸）+ 利多卡因（局部麻醉剂，减轻注射痛感）。\n主要功效：通过专业医生注射到真皮层，深层补水、改善皮肤干燥和肤色暗沉，让皮肤呈现“水光肌”状态。\n适用人群：皮肤严重干燥、暗沉、缺乏光泽，且希望通过医美手段快速改善的人群。"
   },
   {
     "id": "imp20261102-017",
@@ -57,7 +59,7 @@ const products = [
     "price": 388000,
     "listPrice": 388000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-14.jpg",
+    "image": "/assets/products/head-20261103-14.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -69,7 +71,8 @@ const products = [
     "sourceSequence": 17,
     "sourceRow": 4,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "主要功效\n淡化色斑与提亮（515nm/560nm/615nm）：分解黑色素颗粒，改善晒斑、雀斑、黑色痘印和肤色暗沉不均。\n退红与舒缓泛红（590nm/695nm）：封闭扩张的毛细血管，减轻面部潮红、红血丝和红色痘印。\n控油缩毛孔与嫩肤（640nm）：深入真皮层刺激胶原蛋白再生，细化毛孔，改善细纹和粗糙感。\n辅助祛痘（Acne 滤片）：针对炎症期痘痘，抑制痤疮杆菌，减少皮脂分泌，预防痘痘反复。"
   },
   {
     "id": "imp20261102-018",
@@ -80,7 +83,7 @@ const products = [
     "price": 10000,
     "listPrice": 10000,
     "memberPrice": null,
-    "image": "",
+    "image": "/assets/products/head-20261103-45.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -92,7 +95,8 @@ const products = [
     "sourceSequence": 18,
     "sourceRow": 5,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "核心原理：2.45GHz 超微波“隔空打牛”\nOnda Pro 的核心技术是专利的 Coolwaves 冷微波技术，配合 PGW 精准能量传输系统。\n精准靶向脂肪：2.45GHz 的超高频微波对水分的吸收率很低，但对脂肪的吸收率极高。这意味着 80% 的能量能直接穿透表皮，直达脂肪层加热（50-55℃），让脂肪细胞凋亡并随淋巴代谢排出；只有 20% 的能量作用于表皮。\n智能冷却防烫：手柄内置冷却系统，在治疗过程中始终保持表皮清爽舒适，大大降低了烫伤风险，体验感非常温和。\n同步刺激胶原：在加热脂肪的同时，热能传导至真皮层，刺激胶原蛋白新生，避免溶脂后皮肤松垮，实现“边减脂边紧致”。"
   },
   {
     "id": "imp20261102-019",
@@ -103,7 +107,7 @@ const products = [
     "price": 59900,
     "listPrice": 59900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-30.jpg",
+    "image": "/assets/products/head-20261103-30.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -115,7 +119,8 @@ const products = [
     "sourceSequence": 19,
     "sourceRow": 6,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "核心原理：先热后冷，内外夹击\n钻石超塑的核心技术是负压吸引 + 射频热能 + 纳秒级高压脉冲，通过“隔空爆脂”来解决问题：\n负压吸附：像拔罐一样把皮下脂肪和软组织吸起来，聚拢脂肪层次，让能量更精准地作用在靶区，同时让表皮冷却，防止烫伤。\n射频加热：将脂肪层加热到 42℃ 以上，破坏脂肪细胞膜，让脂肪液化，随后通过身体新陈代谢自然排出体外。\n刺激胶原：射频热能还能深入真皮层，刺激胶原蛋白和弹性纤维再生，达到收紧皮肤、防止溶脂后皮肤松垮的效果。\n主要功效与适用人群\n改善面部臃肿：针对肉肉脸、嘟嘟肉、面颊脂肪偏厚，让脸部线条更轻薄流畅。\n淡化双下巴：精准作用于颏下脂肪，改善双下巴，让侧脸线条更清晰。\n紧致下颌缘：收紧松弛的软组织，提升下颌线，改善“没脖子”的模糊感。\n改善口角囊袋：收紧嘴角下方的松弛肉肉，让下面部更紧致。\n适合人群：BMI < 30，有局部脂肪堆积且伴随轻中度皮肤松弛的人。如果是骨骼型双下巴（下颌骨后缩）或全身肥胖者，效果有限。"
   },
   {
     "id": "imp20261102-020",
@@ -126,7 +131,7 @@ const products = [
     "price": 19900,
     "listPrice": 19900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-03.jpg",
+    "image": "/assets/products/head-20261103-03.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -173,7 +178,7 @@ const products = [
     "price": 19900,
     "listPrice": 19900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-04.jpg",
+    "image": "/assets/products/head-20261103-04.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -196,7 +201,7 @@ const products = [
     "price": 580000,
     "listPrice": 580000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-35.jpg",
+    "image": "/assets/products/head-20261103-35.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -208,7 +213,8 @@ const products = [
     "sourceSequence": 25,
     "sourceRow": 10,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "主要功效（5重改善）\n紧致提拉：刺激深层胶原再生，改善面部松弛、法令纹和下颌线模糊。\n美白净肤：击碎黑色素，改善肤色暗沉、痘印和浅层色斑，让皮肤透亮。\n改善肤质：调节水油平衡，缩小毛孔，让皮肤摸起来更细腻光滑。\n淡化细纹：通过热效应促进胶原重组，改善眼周、口周的干纹和细纹。\n溶脂塑形：温和加热脂肪层，辅助改善面部微肿和局部脂肪堆积。"
   },
   {
     "id": "imp20261102-026",
@@ -219,7 +225,7 @@ const products = [
     "price": 299900,
     "listPrice": 299900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-26.jpg",
+    "image": "/assets/products/head-20261103-26.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -231,7 +237,8 @@ const products = [
     "sourceSequence": 26,
     "sourceRow": 11,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "主要功效与适用部位\n淡化眼周细纹：这是它最出圈的用法。针对眼下干纹、卡粉、表情纹有非常好的改善效果，能让眼周皮肤恢复水润和弹性。\n改善肤质与提亮：改善面部暗沉、粗糙和毛孔粗大，提升皮肤的柔韧度和光泽感。\n深层补水锁水：胶原蛋白本身具备极强的结合水分能力，能长效保持皮肤的水润状态。\n医美术后修护：对于激光、微针等医美项目后的屏障受损、泛红，有非常出色的修护和抗炎作用。"
   },
   {
     "id": "imp20261102-027",
@@ -242,7 +249,7 @@ const products = [
     "price": 298000,
     "listPrice": 298000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-59.jpg",
+    "image": "/assets/products/head-20261103-59.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -265,7 +272,7 @@ const products = [
     "price": 39900,
     "listPrice": 39900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-05.jpg",
+    "image": "/assets/products/head-20261103-05.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -288,7 +295,7 @@ const products = [
     "price": 199900,
     "listPrice": 199900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-12.jpg",
+    "image": "/assets/products/head-20261103-12.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -300,7 +307,8 @@ const products = [
     "sourceSequence": 29,
     "sourceRow": 14,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "主要功效\n提亮去黄：加速表皮细胞更新，抑制黑色素形成，改善肤色暗沉、不均和炎症后色素沉着（痘印）。\n疏通毛孔：针对油痘肌、闭口、黑头，帮助清理毛孔堆积的油脂。\n全身嫩肤：不仅可以刷脸，还可以用来改善手肘、膝盖、腋下、后背等部位的暗沉、粗糙和“鸡皮肤”。\n抗老紧致：在剥脱角质之余，还能刺激胶原蛋白生成，淡化面部细纹。"
   },
   {
     "id": "imp20261102-030",
@@ -311,7 +319,7 @@ const products = [
     "price": 298000,
     "listPrice": 298000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-31.jpg",
+    "image": "/assets/products/head-20261103-31.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -323,7 +331,8 @@ const products = [
     "sourceSequence": 30,
     "sourceRow": 15,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "核心原理：先热后冷，内外夹击\n钻石超塑的核心技术是负压吸引 + 射频热能 + 纳秒级高压脉冲，通过“隔空爆脂”来解决问题：\n负压吸附：像拔罐一样把皮下脂肪和软组织吸起来，聚拢脂肪层次，让能量更精准地作用在靶区，同时让表皮冷却，防止烫伤。\n射频加热：将脂肪层加热到 42℃ 以上，破坏脂肪细胞膜，让脂肪液化，随后通过身体新陈代谢自然排出体外。\n刺激胶原：射频热能还能深入真皮层，刺激胶原蛋白和弹性纤维再生，达到收紧皮肤、防止溶脂后皮肤松垮的效果。\n主要功效与适用人群\n改善面部臃肿：针对肉肉脸、嘟嘟肉、面颊脂肪偏厚，让脸部线条更轻薄流畅。\n淡化双下巴：精准作用于颏下脂肪，改善双下巴，让侧脸线条更清晰。\n紧致下颌缘：收紧松弛的软组织，提升下颌线，改善“没脖子”的模糊感。\n改善口角囊袋：收紧嘴角下方的松弛肉肉，让下面部更紧致。\n适合人群：BMI < 30，有局部脂肪堆积且伴随轻中度皮肤松弛的人。如果是骨骼型双下巴（下颌骨后缩）或全身肥胖者，效果有限。"
   },
   {
     "id": "imp20261102-031",
@@ -334,7 +343,7 @@ const products = [
     "price": 79900,
     "listPrice": 79900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-07.jpg",
+    "image": "/assets/products/head-20261103-07.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -346,7 +355,8 @@ const products = [
     "sourceSequence": 31,
     "sourceRow": 16,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "净颜活肤：搭配净颜头和青春净颜精华，溶解毛孔污垢，打开肌肤吸收通道，给毛孔做深度清洁。\n深层焕颜：换上焕颜头，搭配多肽焕颜精华，重点针对 T 区黑头和老废角质，调节水油状态，改善草莓鼻。\n滋养修护：使用滋养头配合逆龄时光精华，在毛孔通道打开时，将多重营养温和送入基底，强韧肤质。\n太空手护理：最后用太空手进行光疗护理（如蓝光舒缓、红光修护），提亮肤色，增加肌肤弹性与通透感。"
   },
   {
     "id": "imp20261102-032",
@@ -357,7 +367,7 @@ const products = [
     "price": 599900,
     "listPrice": 599900,
     "memberPrice": null,
-    "image": "",
+    "image": "/assets/products/head-20261103-64.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -369,7 +379,8 @@ const products = [
     "sourceSequence": 32,
     "sourceRow": 17,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "核心优势\n高弹性与强支撑：弹性模量高，硬度接近假体，能为面部提供稳固的骨相支撑，塑形后不易变形垮塌。\n高粘性与抗移位：粘弹性高于假体，能与组织紧密贴合，做表情时自然灵动，不易发生位移或堆积。\n低溶胀率：低交联配方不易吸水膨胀，术后不易出现“馒化脸”或严重红肿，恢复期相对较短。\n推注顺畅：颗粒均匀，配合其专用的超薄壁针管设计，推注时手感顺滑，医生操作更精准。"
   },
   {
     "id": "imp20261102-033",
@@ -380,7 +391,7 @@ const products = [
     "price": 59800,
     "listPrice": 59800,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-06.jpg",
+    "image": "/assets/products/head-20261103-06.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -403,7 +414,7 @@ const products = [
     "price": 128000,
     "listPrice": 128000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-51.jpg",
+    "image": "/assets/products/head-20261103-51.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -426,7 +437,7 @@ const products = [
     "price": 680000,
     "listPrice": 680000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-33.jpg",
+    "image": "/assets/products/head-20261103-33.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -438,7 +449,8 @@ const products = [
     "sourceSequence": 35,
     "sourceRow": 20,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "适合什么人群\n轻中度松弛：面部有轻度下垂、轮廓线模糊、有双下巴或下颌线不清晰的人。\n肤质综合改善：同时有肤色暗沉、毛孔粗大、细纹、痘印等综合问题，想“一站式”解决的人。\n怕痛且不想停工：相比 热玛吉 和 超声炮，4D 的痛感更低，且基本没有恢复期（不破皮），做完就能正常上班和社交。\n日常抗衰维养：适合 25+ 有抗初老需求，想作为日常保养项目定期做的人。"
   },
   {
     "id": "imp20261102-036",
@@ -449,7 +461,7 @@ const products = [
     "price": 380000,
     "listPrice": 380000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-32.jpg",
+    "image": "/assets/products/head-20261103-32.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -461,7 +473,8 @@ const products = [
     "sourceSequence": 36,
     "sourceRow": 21,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "主打功效\n溶脂塑形：主打深层渗透，帮助分解顽固脂肪，改善局部脂肪堆积。\n紧致肌肤：在溶脂的同时收缩肌肤，避免脂肪减少后皮肤松弛，常用于改善下颌线模糊、口角囊袋、双下巴以及身体局部（如手臂、大腿、腰腹）的肉肉管理。\n质地体验：如果是外用涂抹版，通常呈轻盈水润的果冻质地，上脸有温感，敏感肌相对友好。"
   },
   {
     "id": "imp20261102-037",
@@ -472,7 +485,7 @@ const products = [
     "price": 9900,
     "listPrice": 9900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-60.jpg",
+    "image": "/assets/products/head-20261103-60.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -495,7 +508,7 @@ const products = [
     "price": 49900,
     "listPrice": 49900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-04.jpg",
+    "image": "/assets/products/head-20261103-04.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -518,7 +531,7 @@ const products = [
     "price": 268000,
     "listPrice": 268000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-29.jpg",
+    "image": "/assets/products/head-20261103-29.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -530,7 +543,8 @@ const products = [
     "sourceSequence": 39,
     "sourceRow": 24,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "适合人群与适用部位\n适合人群：30+有综合眼周抗衰需求的人群。如果你不仅有细纹干纹，还伴随黑眼圈、暗沉、眼皮松弛、皮肤屏障脆弱等问题，ColPlus比单一的III型胶原（如薇旖美极纯）更全面。\n适用部位：主要针对眼周（眼下细纹、黑眼圈、眼皮松弛），也可用于全脸改善肤质、淡化干纹和提亮肤色。"
   },
   {
     "id": "imp20261102-040",
@@ -541,7 +555,7 @@ const products = [
     "price": 399900,
     "listPrice": 399900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-16.jpg",
+    "image": "/assets/products/head-20261103-16.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -553,7 +567,8 @@ const products = [
     "sourceSequence": 40,
     "sourceRow": 25,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "主要功效与适用人群\n缩毛孔、控油：对油痘肌、轻中度毛孔粗大效果非常显著，能抑制皮脂腺分泌。\n改善浅表痘坑与痘印：通过刺激胶原蛋白再生，填补浅层凹陷，平滑肌肤。\n紧致抗初老：改善初期细纹、干纹，对下颌线轻度松垮、眼周或颈部细纹也有不错的收紧效果。\n适合人群：油皮/混油皮、轻中度毛孔粗大、浅表痘坑、有初老紧致需求、怕痛且不想有太长恢复期的新手。"
   },
   {
     "id": "imp20261102-041",
@@ -564,7 +579,7 @@ const products = [
     "price": 399900,
     "listPrice": 399900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-49.jpg",
+    "image": "/assets/products/head-20261103-49.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -576,7 +591,8 @@ const products = [
     "sourceSequence": 41,
     "sourceRow": 26,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "嗨体1.5（颈纹王牌）：粘稠度中等，是嗨体最经典、最出圈的款式。专攻颈部静态皱纹，通过平铺注射填平纹路，同时刺激胶原再生，改善颈部松弛。\n嗨体2.5（全脸水光）：质地最稀，分子量最小。主要用于全脸或颈部的中胚层水光补水，改善浅表干纹、肤色暗沉和毛孔粗大，侧重肤质细腻度。"
   },
   {
     "id": "imp20261102-042",
@@ -587,7 +603,7 @@ const products = [
     "price": 399900,
     "listPrice": 399900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-15.jpg",
+    "image": "/assets/products/head-20261103-15.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -599,7 +615,8 @@ const products = [
     "sourceSequence": 42,
     "sourceRow": 27,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "面部常见的三种操作模式\n平扫模式（全脸提亮）：能量相对温和，主要用于改善面部暗沉、肤色不均、浅层色沉和熬夜黄气。这种模式基本不破皮、无结痂，做完就能正常护肤，非常适合日常维养。\n爆破模式（定点祛斑）：针对雀斑、晒斑、老年斑或深层色素痣。能量较高，打完后斑点处会结薄痂，需要 5-7 天自然脱落。这是真正“打斑”的核心模式。\n点阵模式（缩毛孔/去痘坑）：通过激光在皮肤上打出微细孔，刺激胶原蛋白大量再生，从而改善毛孔粗大、轻微痘坑和细纹。"
   },
   {
     "id": "imp20261102-043",
@@ -633,7 +650,7 @@ const products = [
     "price": 128000,
     "listPrice": 128000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-22.jpg",
+    "image": "/assets/products/head-20261103-22.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -645,7 +662,8 @@ const products = [
     "sourceSequence": 44,
     "sourceRow": 29,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "主要功效与适用部位\n深层补水锁水：改善皮肤干燥缺水、沙漠干皮，让素颜自带柔和光泽。\n淡化细纹干纹：对额头、眼周、口周的浅层干纹和细纹有不错的改善作用。\n收敛毛孔与紧致：刺激胶原新生，改善毛孔粗大和肌肤松弛，提升皮肤弹性。\n适用部位：额头、眼周、脸颊、口周、下颌缘、颈部等面颈干燥及有细纹的区域都可以针对性护理。"
   },
   {
     "id": "imp20261102-045",
@@ -656,7 +674,7 @@ const products = [
     "price": 158000,
     "listPrice": 158000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-47.jpg",
+    "image": "/assets/products/head-20261103-47.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -668,7 +686,8 @@ const products = [
     "sourceSequence": 45,
     "sourceRow": 30,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "嗨体1.0（熊猫针）：粘稠度最高，支撑力好。主要用于眼周真皮层，改善泪沟凹陷、眼周细纹和血管型黑眼圈，增厚薄眼周皮肤。"
   },
   {
     "id": "imp20261102-046",
@@ -702,7 +721,7 @@ const products = [
     "price": 328000,
     "listPrice": 328000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-44.jpg",
+    "image": "/assets/products/head-20261103-44.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -714,7 +733,8 @@ const products = [
     "sourceSequence": 47,
     "sourceRow": 32,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "主要功效与适用部位\n瑞蓝2号主打“精细填充”和“软组织修饰”，非常适合需要自然过渡的部位：\n泪沟与卧蚕：质地柔软，能平铺在眼周薄皮处，改善泪沟凹陷和细纹，不易产生 丁达尔现象（发蓝）。\n唇部塑形：改善唇部干瘪、唇纹深，打造自然的 嘟嘟唇 或 微笑唇，触感柔软，说话吃饭不僵硬。\n浅层细纹与凹陷：改善鱼尾纹、眉间纹、口周皱纹，以及太阳穴、面颊等部位的浅层凹陷。\n鼻唇沟（法令纹）：适合中重度法令纹的填充修饰，过渡柔和。"
   },
   {
     "id": "imp20261102-048",
@@ -725,7 +745,7 @@ const products = [
     "price": 999900,
     "listPrice": 999900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-17.jpg",
+    "image": "/assets/products/head-20261103-17.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -737,7 +757,8 @@ const products = [
     "sourceSequence": 48,
     "sourceRow": 33,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "适合人群与功效\n痘肌与痘坑星人：对痤疮瘢痕（痘坑）、炎性痘痘和痘印有非常好的改善作用，能从根本上重塑肤质。\n毛孔粗大与油痘肌：射频热能能抑制皮脂腺分泌，从源头控油，让毛孔视觉上缩小。\n轻熟龄抗衰党：想要改善下颌线模糊、法令纹、皮肤松弛，但怕痛或不想做太恢复期长项目的人。\n敏感肌与玫瑰痤疮：在专业医生操作下，黄金微针能帮助修护受损肌底，改善泛红和潮红。"
   },
   {
     "id": "imp20261102-049",
@@ -748,7 +769,7 @@ const products = [
     "price": 368000,
     "listPrice": 368000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-24.jpg",
+    "image": "/assets/products/head-20261103-24.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -771,7 +792,7 @@ const products = [
     "price": 59900,
     "listPrice": 59900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-11.jpg",
+    "image": "/assets/products/head-20261103-11.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -783,7 +804,8 @@ const products = [
     "sourceSequence": 50,
     "sourceRow": 35,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "主要功效\n提亮去黄：加速表皮细胞更新，抑制黑色素形成，改善肤色暗沉、不均和炎症后色素沉着（痘印）。\n疏通毛孔：针对油痘肌、闭口、黑头，帮助清理毛孔堆积的油脂。\n全身嫩肤：不仅可以刷脸，还可以用来改善手肘、膝盖、腋下、后背等部位的暗沉、粗糙和“鸡皮肤”。\n抗老紧致：在剥脱角质之余，还能刺激胶原蛋白生成，淡化面部细纹。"
   },
   {
     "id": "imp20261102-051",
@@ -794,7 +816,7 @@ const products = [
     "price": 200000,
     "listPrice": 200000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-52.jpg",
+    "image": "/assets/products/head-20261103-52.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -817,7 +839,7 @@ const products = [
     "price": 99900,
     "listPrice": 99900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-10.jpg",
+    "image": "/assets/products/head-20261103-10.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -829,7 +851,8 @@ const products = [
     "sourceSequence": 52,
     "sourceRow": 37,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "主要功效\n提亮去黄：加速表皮细胞更新，抑制黑色素形成，改善肤色暗沉、不均和炎症后色素沉着（痘印）。\n疏通毛孔：针对油痘肌、闭口、黑头，帮助清理毛孔堆积的油脂。\n全身嫩肤：不仅可以刷脸，还可以用来改善手肘、膝盖、腋下、后背等部位的暗沉、粗糙和“鸡皮肤”。\n抗老紧致：在剥脱角质之余，还能刺激胶原蛋白生成，淡化面部细纹。"
   },
   {
     "id": "imp20261102-053",
@@ -840,7 +863,7 @@ const products = [
     "price": 68000,
     "listPrice": 68000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-50.jpg",
+    "image": "/assets/products/head-20261103-50.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -863,7 +886,7 @@ const products = [
     "price": 199900,
     "listPrice": 199900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-34.jpg",
+    "image": "/assets/products/head-20261103-34.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -875,7 +898,8 @@ const products = [
     "sourceSequence": 54,
     "sourceRow": 39,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "三大王炸功效\n溶脂塑形（面部减容）：激光能精准加热深层脂肪层（0.5-2cm），让脂肪细胞温度达到 45-47℃，失去活性并自然代谢排出。对双下巴、口角囊袋、圆脸发腮有非常好的改善作用，让脸“薄”一圈。\n提拉紧致（筋膜复位）：能量作用于筋膜层和面部韧带，让松弛的韧带收紧复位，为面部提供强有力的支撑，改善法令纹和下颌缘松垮。\n刺激胶原再生：加热真皮层到 50-65℃，让胶原纤维即刻收缩并长期新生，改善皮肤松弛和细纹，让皮肤摸起来更紧实。"
   },
   {
     "id": "imp20261102-055",
@@ -886,7 +910,7 @@ const products = [
     "price": 88800,
     "listPrice": 88800,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-25.jpg",
+    "image": "/assets/products/head-20261103-25.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -898,7 +922,8 @@ const products = [
     "sourceSequence": 55,
     "sourceRow": 40,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "核心成分与原理\nPLLA 超微球：核心成分是聚左旋乳酸，微球粒径精准控制在 25-32μm 的窄区间内。这种小粒径能温和抵达真皮浅中层，定向刺激 Ⅲ型胶原优先生长，有效规避结节和过度增生风险。\n渐进式再生：PLLA 微球在体内会缓慢降解，持续诱导成纤维细胞分泌胶原蛋白、弹性纤维和粘多糖。皮肤是从内而外慢慢“长”出弹润感，而不是打完立刻“胀”起来。\n深层修护：不仅能改善细纹和松弛，还能重建真皮基质，改善光损伤和慢性干燥，让皮肤恢复紧致与活力。"
   },
   {
     "id": "imp20261102-056",
@@ -909,7 +934,7 @@ const products = [
     "price": 178000,
     "listPrice": 178000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-58.jpg",
+    "image": "/assets/products/head-20261103-58.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -932,7 +957,7 @@ const products = [
     "price": 298000,
     "listPrice": 298000,
     "memberPrice": null,
-    "image": "",
+    "image": "/assets/products/head-20261103-18.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -944,7 +969,8 @@ const products = [
     "sourceSequence": 57,
     "sourceRow": 42,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "主要功效与适用人群\n缩毛孔、控油：对油痘肌、轻中度毛孔粗大效果非常显著，能抑制皮脂腺分泌。\n改善浅表痘坑与痘印：通过刺激胶原蛋白再生，填补浅层凹陷，平滑肌肤。\n紧致抗初老：改善初期细纹、干纹，对下颌线轻度松垮、眼周或颈部细纹也有不错的收紧效果。\n适合人群：油皮/混油皮、轻中度毛孔粗大、浅表痘坑、有初老紧致需求、怕痛且不想有太长恢复期的新手。"
   },
   {
     "id": "imp20261102-058",
@@ -955,7 +981,7 @@ const products = [
     "price": 128000,
     "listPrice": 128000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-13.jpg",
+    "image": "/assets/products/head-20261103-13.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -967,7 +993,8 @@ const products = [
     "sourceSequence": 58,
     "sourceRow": 43,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "经典“三部曲”具体步骤\n海菲秀的核心在于它独有的 Vortex 涡旋水动力技术，通过“边冲边吸”的方式，把毛孔里的脏东西卷出来，同时把精华旋进去。\n第一步：净颜活肤（清洁 + 去角质）使用专用的清洁溶液和探头，温和地软化并代谢皮肤表层的老废角质，松动毛孔深处的油脂和污垢。这一步相当于给皮肤“松土”，打通后续吸收的通道，让皮肤瞬间变得细腻软糯。\n第二步：焕颜吸净（深层清洁 + 疏通）这是最核心的“吸尘器”步骤。利用 Vortex 双向涡旋技术，配合低浓度的酸类成分（如水杨酸、果酸），精准吸走毛孔里的黑头、白头、皮脂栓和闭口粉刺。你会看到吸出来的溶液里漂浮着黄色的油脂颗粒，清洁效果肉眼可见，油光脸直接变清爽哑光。\n第三步：润颜修护（精华导入 + 锁水）在毛孔被彻底清理干净后，趁通道打开，将富含抗氧化成分和保湿因子的精华（如高浓度玻尿酸、植物修护精华）深层灌注到肌肤里。这一步能舒缓清洁后的皮肤，强韧屏障，让皮肤呈现水润透亮的光泽感。\n适合人群\n适合人群：有毛孔清洁需求、经常化妆导致妆前卡粉、T区容易出油、有黑头闭口困扰、或者熬夜后脸色暗沉的人群。\n不适合人群：正处于爆痘急性期（大面积红肿脓包）、皮肤严重敏感期或晒伤脱皮的人群，建议先缓一缓，等皮肤稳定再做。"
   },
   {
     "id": "imp20261102-059",
@@ -978,7 +1005,7 @@ const products = [
     "price": 9900,
     "listPrice": 9900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-02.jpg",
+    "image": "/assets/products/head-20261103-02.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -1001,7 +1028,7 @@ const products = [
     "price": 259900,
     "listPrice": 259900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-46.jpg",
+    "image": "/assets/products/head-20261103-46.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -1013,7 +1040,8 @@ const products = [
     "sourceSequence": 60,
     "sourceRow": 45,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "核心原理与独家技术\n线性交联技术：海魅采用了独特的线性交联工艺，形成了非颗粒化的均匀结构。这就好比把“颗粒面粉”变成了“细腻丝绸”，注射到皮肤里没有颗粒感，手感更真实，而且能防止生物膜产生，降低不良反应。\n高内聚力：它的内聚力非常高，打进去之后能牢牢“锁住”形状，大笑、说话或者做表情时都不容易移位变形，非常适合做轮廓固定。\n贻贝粘蛋白：成分中添加了这种天然多酚蛋白质，具有抗炎、抗氧化和抗糖化的优势，对敏感肌更友好，术后红肿和延发性反应相对更少。"
   },
   {
     "id": "imp20261102-061",
@@ -1024,7 +1052,7 @@ const products = [
     "price": 128000,
     "listPrice": 128000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-21.jpg",
+    "image": "/assets/products/head-20261103-21.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -1036,7 +1064,8 @@ const products = [
     "sourceSequence": 61,
     "sourceRow": 46,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "嗨体2.5（全脸水光）：质地最稀，分子量最小。主要用于全脸或颈部的中胚层水光补水，改善浅表干纹、肤色暗沉和毛孔粗大，侧重肤质细腻度。"
   },
   {
     "id": "imp20261102-062",
@@ -1047,7 +1076,7 @@ const products = [
     "price": 300000,
     "listPrice": 300000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-53.jpg",
+    "image": "/assets/products/head-20261103-53.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -1070,7 +1099,7 @@ const products = [
     "price": 98000,
     "listPrice": 98000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-57.jpg",
+    "image": "/assets/products/head-20261103-57.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -1093,7 +1122,7 @@ const products = [
     "price": 178000,
     "listPrice": 178000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-55.jpg",
+    "image": "/assets/products/head-20261103-55.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -1116,7 +1145,7 @@ const products = [
     "price": 699900,
     "listPrice": 699900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-37.jpg",
+    "image": "/assets/products/head-20261103-37.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -1128,7 +1157,8 @@ const products = [
     "sourceSequence": 65,
     "sourceRow": 50,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "主要功效与适用人群\n对抗“松”：紧致面部软组织，改善脸颊松垮、皮肉分离，让面部轮廓更流畅。\n对抗“垂”：深层提拉筋膜层，改善眉眼下移、双下巴、下颌线模糊，重塑清晰侧颜线。\n对抗“老”：淡化法令纹、木偶纹、额纹等静态纹，改善皮肤暗沉，让肤质更细腻。\n适合人群：25+ 有初老迹象、35+ 有轻中度面部松弛、苹果肌下垂、下颌缘模糊、面部脂肪轻微堆积想优化线条的人。"
   },
   {
     "id": "imp20261102-066",
@@ -1139,7 +1169,7 @@ const products = [
     "price": 89900,
     "listPrice": 89900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-09.jpg",
+    "image": "/assets/products/head-20261103-09.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -1151,7 +1181,8 @@ const products = [
     "sourceSequence": 66,
     "sourceRow": 51,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "主要功效\n提亮去黄：加速表皮细胞更新，抑制黑色素形成，改善肤色暗沉、不均和炎症后色素沉着（痘印）。\n疏通毛孔：针对油痘肌、闭口、黑头，帮助清理毛孔堆积的油脂。\n全身嫩肤：不仅可以刷脸，还可以用来改善手肘、膝盖、腋下、后背等部位的暗沉、粗糙和“鸡皮肤”。\n抗老紧致：在剥脱角质之余，还能刺激胶原蛋白生成，淡化面部细纹。"
   },
   {
     "id": "imp20261102-067",
@@ -1162,7 +1193,7 @@ const products = [
     "price": 480000,
     "listPrice": 480000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-54.jpg",
+    "image": "/assets/products/head-20261103-54.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -1185,7 +1216,7 @@ const products = [
     "price": 499900,
     "listPrice": 499900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-36.jpg",
+    "image": "/assets/products/head-20261103-36.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -1197,7 +1228,8 @@ const products = [
     "sourceSequence": 68,
     "sourceRow": 53,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "主要功效与适用人群\n对抗“松”：紧致面部软组织，改善脸颊松垮、皮肉分离，让面部轮廓更流畅。\n对抗“垂”：深层提拉筋膜层，改善眉眼下移、双下巴、下颌线模糊，重塑清晰侧颜线。\n对抗“老”：淡化法令纹、木偶纹、额纹等静态纹，改善皮肤暗沉，让肤质更细腻。\n适合人群：25+ 有初老迹象、35+ 有轻中度面部松弛、苹果肌下垂、下颌缘模糊、面部脂肪轻微堆积想优化线条的人。"
   },
   {
     "id": "imp20261102-069",
@@ -1208,7 +1240,7 @@ const products = [
     "price": 128000,
     "listPrice": 128000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-23.jpg",
+    "image": "/assets/products/head-20261103-23.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -1220,7 +1252,8 @@ const products = [
     "sourceSequence": 69,
     "sourceRow": 54,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "主要功效与适用人群\n褪黄提亮：直击熬夜、甜食、紫外线带来的糖化暗沉，改善面部“黄气”和疲惫感。\n深层补水：改善皮肤干燥缺水、起皮、上妆卡粉等问题。\n紧致嫩肤：刺激胶原合成，改善浅层细纹、毛孔粗大和轻度松弛。\n适用人群：适合 25-55 岁，面部皮肤暗沉、干燥粗糙、有细纹及轻度松弛者，尤其是经常熬夜、爱吃甜食的“屏幕肌”和“焦糖脸”。"
   },
   {
     "id": "imp20261102-070",
@@ -1231,7 +1264,7 @@ const products = [
     "price": 499900,
     "listPrice": 499900,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-56.jpg",
+    "image": "/assets/products/head-20261103-56.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -1254,7 +1287,7 @@ const products = [
     "price": 158000,
     "listPrice": 158000,
     "memberPrice": null,
-    "image": "/assets/products/import-20261102-48.jpg",
+    "image": "/assets/products/head-20261103-48.jpg",
     "hot": false,
     "status": "published",
     "priceApproved": true,
@@ -1266,46 +1299,8 @@ const products = [
     "sourceSequence": 71,
     "sourceRow": 56,
     "sourceNote": "",
-    "importBatch": "20261102-catalogue"
-  },
-  {
-    "id": "p1",
-    "name": "热玛吉FLX",
-    "category": "抗衰紧致",
-    "tags": [
-      "光电美容"
-    ],
-    "desc": "紧致护理 · 面部项目",
-    "price": 299900,
-    "image": "/assets/products/thermage.png",
-    "hot": true,
-    "sortOrder": 55
-  },
-  {
-    "id": "p2",
-    "name": "超光子M22",
-    "category": "光电美容",
-    "tags": [
-      "皮肤管理"
-    ],
-    "desc": "肤色管理 · 光电项目",
-    "price": 128000,
-    "image": "/assets/products/m22.png",
-    "hot": true,
-    "sortOrder": 56
-  },
-  {
-    "id": "p4",
-    "name": "嗨体熊猫针",
-    "category": "微整注射",
-    "tags": [
-      "抗衰紧致"
-    ],
-    "desc": "眼周护理 · 面部项目",
-    "price": 69900,
-    "image": "/assets/products/panda.png",
-    "hot": false,
-    "sortOrder": 58
+    "importBatch": "20261102-catalogue",
+    "detailDescription": "嗨体1.5（颈纹王牌）：粘稠度中等，是嗨体最经典、最出圈的款式。专攻颈部静态皱纹，通过平铺注射填平纹路，同时刺激胶原再生，改善颈部松弛。"
   },
   {
     "id": "p0",
@@ -1332,7 +1327,7 @@ const products = [
     ],
     "desc": "活动项目 · 2人拼团",
     "price": 109900,
-    "image": "/assets/products/fisioli.png",
+    "image": "/assets/products/head-20261103-63.jpg",
     "hot": true,
     "limit": 1,
     "sortOrder": 63
@@ -1346,10 +1341,11 @@ const products = [
     ],
     "desc": "活动项目 · 2人拼团",
     "price": 99900,
-    "image": "/assets/products/huiyanzhen.png",
+    "image": "/assets/products/head-20261103-61.jpg",
     "hot": true,
     "limit": 1,
-    "sortOrder": 64
+    "sortOrder": 64,
+    "detailDescription": "核心成分与原理\nPLLA 超微球：核心成分是聚左旋乳酸，微球粒径精准控制在 25-32μm 的窄区间内。这种小粒径能温和抵达真皮浅中层，定向刺激 Ⅲ型胶原优先生长，有效规避结节和过度增生风险。\n渐进式再生：PLLA 微球在体内会缓慢降解，持续诱导成纤维细胞分泌胶原蛋白、弹性纤维和粘多糖。皮肤是从内而外慢慢“长”出弹润感，而不是打完立刻“胀”起来。\n深层修护：不仅能改善细纹和松弛，还能重建真皮基质，改善光损伤和慢性干燥，让皮肤恢复紧致与活力。"
   },
   {
     "id": "p11",
@@ -1360,7 +1356,7 @@ const products = [
     ],
     "desc": "活动项目 · 2人拼团",
     "price": 79900,
-    "image": "/assets/products/fotona4d.png",
+    "image": "/assets/products/head-20261103-62.jpg",
     "hot": true,
     "limit": 1,
     "sortOrder": 65
@@ -1381,39 +1377,12 @@ const products = [
 // 医生简介与项目认证根据用户提供的介绍资料整理。
 const doctors=[
   {
-    "id": "d2",
-    "name": "李秋月",
-    "title": "医师",
-    "experience": "",
-    "specialty": "问题肌管理 / 联合美肤",
-    "image": "/assets/doctors/li-qiuyue.png",
-    "focus": [
-      "问题肌诊疗",
-      "1+X联合方案",
-      "仪器无创抗衰",
-      "中胚层联合治疗",
-      "激光美肤"
-    ],
-    "introduction": "毕业于北华大学，深耕医美行业多年，持续研修，关注皮肤美容领域的新技术与动态。专注问题肌诊疗，擅长仪器无创抗衰、中胚层联合治疗及激光美肤，注重个性化皮肤美容方案优化。",
-    "approach": "以“1+X”联合方案，结合不同年龄、肌肤特质与个体差异，分周期进行联合定制，兼顾阶段改善与长期维护。",
-    "certifications": [
-      "热玛吉官方认证医师",
-      "半岛超声炮三星认证医师",
-      "尖峰之星超声王认证医师",
-      "欧洲之星Fotona4DPro认证医师",
-      "美迪迈Endymed PRO认证医师",
-      "再希思黄金微针认证医师",
-      "5GMAX新锐医师",
-      "艾维岚认证注射医师"
-    ]
-  },
-  {
     "id": "d1",
     "name": "韩宛喜",
     "title": "医师",
     "experience": "",
     "specialty": "面部抗衰 / 个性美肤",
-    "image": "/assets/doctors/han-wanxi.png",
+    "image": "/assets/doctors/roster-01.png",
     "focus": [
       "面部抗衰年轻化",
       "个性化面部美肤",
@@ -1436,38 +1405,428 @@ const doctors=[
       "韩国伊婉认证医师",
       "伊肤泉微针技术认证医师",
       "嗨体系列产品认证医师"
-    ]
+    ],
+    "clinicId": "c1",
+    "posterQuote": "可可爱爱的中国女婿，欧巴帮你省机票"
   },
   {
     "id": "d3",
     "name": "李旭莹",
-    "title": "医师",
+    "title": "主治医师",
     "experience": "",
-    "specialty": "轮廓塑形 / 面部年轻化",
-    "image": "/assets/doctors/li-xuying.png",
+    "specialty": "颜面精雕|轮廓塑形、胶原蛋白及再生材料面部年轻化、光电中胚联合多维抗衰",
+    "image": "/assets/doctors/roster-08.png",
     "focus": [
-      "颜面精雕轮廓塑形",
-      "胶原蛋白面部年轻化",
-      "联合光电多维抗衰"
+      "颜面精雕与轮廓塑形",
+      "胶原蛋白及再生材料面部年轻化",
+      "光电中胚联合抗衰"
     ],
-    "introduction": "毕业于河北医科大学，关注美学平衡，践行自然美的审美理念。重视医学基础与精细操作，结合个人特点，开展面部轮廓塑形、胶原蛋白面部年轻化及联合光电抗衰。",
+    "introduction": "毕业于河北医科大学临床医学，主治医师，深耕医美领域多年，以扎实的医学功底为基石，将面部美学与皮肤生理学深度融合。在面部精细化抗衰领域，美学素养深厚、审美高级独到、方案定制化，并坚持“功能修复与形态美化并行”的诊疗理念，为求美者构建自然、高级、经得起时间考验的年轻化状态",
     "approach": "注重面部整体协调与细节，沟通自然、灵动的美学表达。",
     "certifications": [
-      "半岛超声炮三星认证",
+      "美国乔雅登丰颜、缇颜、质颜官方认证注射医师",
+      "菲林普利官方认证注射医师",
+      "薇旖美官方认证星钻医师",
+      "半岛超声炮三星认证医师",
+      "热玛吉Thermage官方认证医师",
+      "半岛黄金微针认证医师",
+      "艾维岚官方认证注射医师",
       "超光子逐光之星医师",
-      "7D聚拉提认证操作医师",
-      "艾尔建乔雅登官方认证医师",
-      "爱美客嗨体、熊猫针指定注射医师",
-      "婕尔MAX官方认证注射医师",
-      "欧洲之星4D PRO指定操作医生",
-      "PRINCESS公主官方注射认证医师",
-      "海魅官方认证注射医师"
+      "蓉芷官方认证注射医师",
+      "中国医师协会整形医师分会会员",
+      "塑妍萃Sculptra官方认证注射医师",
+      "中国整形协会面部年轻化委员"
     ],
     "memberships": [
       "中国医师协会整形医师分会会员",
       "中国整形协会面部年轻化委员"
-    ]
+    ],
+    "clinicId": "c3",
+    "posterQuote": "以适度为尺，以自然为序，践行长期主义医美观"
+  },
+  {
+    "id": "roster-doctor-02",
+    "name": "周由乐",
+    "clinicId": "c1",
+    "image": "/assets/doctors/roster-02.png",
+    "title": "",
+    "experience": "",
+    "specialty": "精研各种皮肤问题丨色斑分层定位诊疗术顽固性痤疮皮肤美容术|光电美肤美容术提供定制化美容治疗方案",
+    "introduction": "颜值与才华并重、责任与医术同行潜心致力于皮肤注射美容与光电美肤提升精致度，多角度塑美呈现肌肤质感扎实基础与精细风格，打造化妆式微调的诊疗技术",
+    "approach": "",
+    "focus": [
+      "色斑分层定位诊疗",
+      "顽固性痤疮护理",
+      "光电美肤",
+      "个性化方案"
+    ],
+    "certifications": [
+      "中国整形美容行业新锐代表",
+      "伊肤泉微针技术授证医师",
+      "中国整形美容协会激光美容分会会员．嗨体官方注射认证医师",
+      "中国半岛超声炮三星认证医生",
+      "英诺品牌系列认证医生",
+      "韩国再希思JEISYS认证医生",
+      "以色列INMODE认证医师",
+      "艾维岚童颜针认证医生",
+      "弗缦胶原认证医生",
+      "热玛吉认证医师"
+    ],
+    "memberships": [],
+    "posterQuote": "不想当网红的文艺青年不是好医生"
+  },
+  {
+    "id": "roster-doctor-03",
+    "name": "滕佳宇",
+    "clinicId": "c1",
+    "image": "/assets/doctors/roster-03.png",
+    "title": "整形外科主治医师",
+    "experience": "",
+    "specialty": "结构性年轻化设计、面部轮廓重塑与比例优化、胶原再生抗衰及眼周年轻化精细治疗，擅长注射与光电联合诊疗。依托整形外科专业评估，结合微创与外科理念，实现自然协调、效果持久的年轻化效果",
+    "introduction": "北京市美容主诊医师|整形外科主治医师，上海九院进修，公立从业背景，赴韩学术交流经历。以整形外科的结构评估为基础，将个体审美需求与解剖结构、面部比例等相结合，制定个性化诊疗方案。注重整体协调与自然表达，关注面部结构、组织层次与动态美感的平衡，在改善面部状态的同时，保留个人特色与高级感",
+    "approach": "",
+    "focus": [
+      "结构性年轻化设计",
+      "轮廓重塑与比例优化",
+      "胶原再生抗衰",
+      "眼周年轻化",
+      "注射与光电联合诊疗"
+    ],
+    "certifications": [
+      "美国艾尔建临床注射技术顾问",
+      "全球7大注射品牌临床培训导师",
+      "美国乔雅登认证临床注射专家",
+      "中国整合医学美容学会(香港)委员",
+      "优法兰认证注射医师",
+      "注射美容&抗衰老课题研究专家",
+      "塑妍萃认证注射医师",
+      "中整协海峡两岸分会委员",
+      "艾维岚认证注射医师",
+      "中整协中西医结合分会理事",
+      "肤莱美认证注射医师",
+      "国际医疗整形美容协会会员",
+      "濡白天使认证注射医师",
+      "大韩整形美容外科协会荣誉会员",
+      "各类肉毒素认证医师",
+      "中华医学会整形外科学分会会员",
+      "半岛大超炮三星认证医师",
+      "注射抗衰与五官精细化雕塑专家"
+    ],
+    "memberships": [],
+    "posterQuote": "用整形外科的结构思维 让美丽经得起时间的考验"
+  },
+  {
+    "id": "roster-doctor-04",
+    "name": "吕雪",
+    "clinicId": "c1",
+    "image": "/assets/doctors/roster-04.png",
+    "title": "",
+    "experience": "",
+    "specialty": "精研面部抗衰与年轻化综合管理，熟练开展热玛吉、Fotona4D、超声炮、钻石超塑等仪器抗衰，及多款合规填充、胶原再生、精准刷酸等项目，技术全面，审美自然",
+    "introduction": "致力于光电与注射联合的长远疗法，崇尚自然、动态、和谐的高质感美学。不盲目填充，不夸张轮廓，而是唤醒面部本有的灵动神采。精控剂量与层次，兼顾即刻效果与远期年轻轨迹，让每一寸改变都自然融入，随时间愈发动人",
+    "approach": "",
+    "focus": [
+      "面部年轻化综合管理",
+      "热玛吉",
+      "Fotona 4D",
+      "超声炮",
+      "钻石超塑",
+      "填充与胶原再生",
+      "刷酸"
+    ],
+    "certifications": [
+      "热玛吉认证医师",
+      "BBL HERO中国区授权智领医师",
+      "艾维岚认证医师",
+      "半岛超声炮认证医师",
+      "普丽妍认证医师",
+      "Inmode钻石超塑认证医师",
+      "弗缦臻创认证医师",
+      "Endymed PRO认证医生",
+      "濡白天使认证医师",
+      "Fotona 4D认证星医生",
+      "薇旖美认证医师",
+      "悦白之几指定医师",
+      "嗨体认证医师",
+      "氏殊甄选合作医师",
+      "U",
+      "乐提葆微滴培训技术导师",
+      "CO"
+    ],
+    "memberships": [],
+    "posterQuote": "修面如修心"
+  },
+  {
+    "id": "roster-doctor-05",
+    "name": "王佳佳",
+    "clinicId": "c1",
+    "image": "/assets/doctors/roster-05.png",
+    "title": "",
+    "experience": "",
+    "specialty": "微创注射美容 | 肌肤修复再生仪器抗衰丨光电抗衰紧致诊疗术面部年轻化丨皮肤全层美塑疗法",
+    "introduction": "主张由点及面、分型而治的理念将技术充分融入治疗中，提升自然美感度为求美者重塑肌肤、定制心动美学",
+    "approach": "",
+    "focus": [
+      "微创注射美容",
+      "肌肤修复再生",
+      "光电抗衰紧致",
+      "面部年轻化"
+    ],
+    "certifications": [
+      "中国整形美容协会会员",
+      "Youmagie认证医师",
+      "中国整形美容协会头颈轮廓美容医学分会理事",
+      "Inmode认证医师",
+      "科医人逐光之星超光子认证医师",
+      "艾维岚认证医师",
+      "科医人stellar超光子双认证医师",
+      "菲林普利认证医师",
+      "半岛超声炮认证医师",
+      "保妥适认证医师",
+      "索塔热玛吉认证医师",
+      "上瘾红认证医师"
+    ],
+    "memberships": [],
+    "posterQuote": "“痛在你身 疼在我心 做！ 痛感治疗的闺蜜型医生”"
+  },
+  {
+    "id": "roster-doctor-06",
+    "name": "曹泽宇",
+    "clinicId": "c1",
+    "image": "/assets/doctors/roster-06.png",
+    "title": "",
+    "experience": "",
+    "specialty": "光电分层抗衰，主攻精准抗衰，温和治疗，实现紧致焕颜。中胚层精准养护，还原健康通透肌态。问题肌针对性改善，结合光电与中胚层联合疗法，为油痘肌、敏感肌、暗沉肌定制长期管理方案。",
+    "introduction": "专注医美皮肤科，以“温和精准、细腻入微〞为准则，秉持“医学为底、舒适至上”的理念，精通各类光电设备操作，注重诊疗细节与情绪关照，用耐心沟通和轻柔手法让治疗兼顾效果与温度，是顾客信赖的“皮肤贴心守护者〞。",
+    "approach": "",
+    "focus": [
+      "光电分层抗衰",
+      "中胚层养护",
+      "油痘肌与敏感肌管理"
+    ],
+    "certifications": [],
+    "memberships": [],
+    "posterQuote": "温柔贴心的皮肤诊疗闺蜜，细腻诊疗让美自然天成"
+  },
+  {
+    "id": "roster-doctor-07",
+    "name": "张家慧",
+    "clinicId": "c1",
+    "image": "/assets/doctors/roster-07.png",
+    "title": "",
+    "experience": "",
+    "specialty": "全层联合抗衰、面部年轻化综合定制；面部痤疮分型治疗、色斑分型治疗；敏感肌修复、问题肌管理",
+    "introduction": "专注于光电抗衰与皮肤问题治疗，拥有扎实的理论功底与丰富的临床经验。擅长将专业医学技术与前沿美学理念结合，拒绝流水线式操作，根据不同肤质与衰老问题定制专属方案，手法细腻、治疗精准，在提升效果的同时兼顾舒适度与长期皮肤健康管理，用专业与耐心守护每一位求美者的肌肤状态",
+    "approach": "",
+    "focus": [
+      "全层联合抗衰",
+      "面部年轻化",
+      "痤疮与色斑分型治疗",
+      "敏感肌修复"
+    ],
+    "certifications": [
+      "热玛吉官方认证医师",
+      "黑金DPL超光子认证医师",
+      "半岛超声炮三星认证医师",
+      "赛诺龙星耀超光子认证医师",
+      "半岛逆时针认证医师",
+      "保妥适官方认证注射医师",
+      "科医人AOPT超光子逐光之星医师"
+    ],
+    "memberships": [],
+    "posterQuote": "深耕肌肤精细化管理，全层抗衰，呵护问题肌"
+  },
+  {
+    "id": "roster-doctor-09",
+    "name": "张佳",
+    "clinicId": "c3",
+    "image": "/assets/doctors/roster-09.png",
+    "title": "",
+    "experience": "",
+    "specialty": "面部轮廓精雕 自然风精细化打造 抗衰紧致综合皮肤年轻态管理、肤色健康化诊疗",
+    "introduction": "深耕医美领域多年，专业功底扎实，临床经验丰富，专注面部美学设计与皮肤综合诊疗。精通各类光电仪器，注射微整形，坚持“一人一方案”定制化诊疗，注重自然和谐的东方美学，兼顾安全与美观，拒绝过度医美，为每一位求美者定制专属的变美方案",
+    "approach": "",
+    "focus": [
+      "面部轮廓精雕",
+      "抗衰紧致",
+      "皮肤年轻态管理",
+      "肤色管理"
+    ],
+    "certifications": [
+      "索塔热玛吉技术专业认证",
+      "超皮秒认证医师",
+      "舒立缇认证医师",
+      "半岛白极光认证医师",
+      "艾维岚认证医师",
+      "非凡蛋白光推荐医生",
+      "半岛大超炮三星认证医师",
+      "伊诺锶黄金微针官方操作认证",
+      "半岛黄金微针4.0推荐医师",
+      "斯嘉丽黄金微针官方操作认证",
+      "半岛逆时针三星认证",
+      "高频微针技术&黄极光临床认证",
+      "嘉实超声刀授权认证医师",
+      "中整协微整形协会会员"
+    ],
+    "memberships": [],
+    "posterQuote": "面部年轻化 勾勒紧致轮廓与匀亮肤质"
+  },
+  {
+    "id": "roster-doctor-10",
+    "name": "袁芳",
+    "clinicId": "c3",
+    "image": "/assets/doctors/roster-10.png",
+    "title": "主治医师",
+    "experience": "",
+    "specialty": "拥有全品类光电抗衰与注射填充权威认证，专精面部年轻化综合定制。以多元顶尖技术精雕轮廓，重塑五官和谐，打造自然高级美感",
+    "introduction": "深耕医美临床多年的主治医师，专注面部年轻化精雕与高阶美学设计，以精细化操作、自然高级效果为核心优势。持有多项权威认证，长期为剧组及艺人团队提供专属美学定制服务，坚持以自然、高级、无痕为核心理念，为众多明星与公众人物打造专属美学方案",
+    "approach": "",
+    "focus": [
+      "面部年轻化精雕",
+      "面部美学设计",
+      "光电抗衰",
+      "注射填充"
+    ],
+    "certifications": [
+      "塑妍萃认证注射医师",
+      "欧洲之星认证医师",
+      "保妥适认证注射医师",
+      "PICOWAY超皮秒新锐医师",
+      "艾维岚认证注射医师",
+      "第二代超声炮三星认证医师",
+      "菲林普利认证注射医师",
+      "美迪迈黄金微针认证医师",
+      "艾塑菲认证注射医师",
+      "第四代普门超声炮认证医师",
+      "艾莉薇认证注射医师",
+      "中国整形美容协会会员",
+      "Thermage热玛吉认证医师",
+      "韩国整形外科协会KCCS注射医师"
+    ],
+    "memberships": [],
+    "posterQuote": "明星御用抗衰微整专家，东方面部美学践行者"
+  },
+  {
+    "id": "roster-doctor-11",
+    "name": "杨静静",
+    "clinicId": "c3",
+    "image": "/assets/doctors/roster-11.png",
+    "title": "",
+    "experience": "",
+    "specialty": "抗衰紧致除皱，亮肤美白缩毛孔，敏感肌修复，祛痘坑痘印，胶原再生材料注射",
+    "introduction": "从事医美行业多年，先后在上海、深圳、宁波等大型连锁医美机构深造，深耕前沿技术。专注面部年轻化与问题肌诊疗，操作精细、效果自然安全。持有多项光电抗衰认证，擅长定制专属方案。秉持「科学护肤、精准改善、自然无痕」理念，以专业为求美者打造健康透亮、年轻紧致肌肤",
+    "approach": "",
+    "focus": [
+      "抗衰紧致除皱",
+      "亮肤与毛孔管理",
+      "敏感肌修复",
+      "痘坑痘印管理",
+      "胶原再生材料注射"
+    ],
+    "certifications": [
+      "InMode盈美特认证医师",
+      "半岛经典、黄金炮认证医师",
+      "科医人M22逐光之星认证医师",
+      "尖峰之星超声王认证医师",
+      "半岛大超炮三星医师",
+      "丽驻兰合作认证医师",
+      "半岛黄金微针认证医师",
+      "热芙美中国区指定操作医师"
+    ],
+    "memberships": [],
+    "posterQuote": "精研医美技艺，匠心雕琢自然美"
+  },
+  {
+    "id": "roster-doctor-12",
+    "name": "刘亚丽",
+    "clinicId": "c3",
+    "image": "/assets/doctors/roster-12.png",
+    "title": "",
+    "experience": "",
+    "specialty": "专攻面部抗衰+肌肤综合修护，精通半岛全系抗衰、钻石超塑、热拉提、赛诺龙超皮秒、5G MPP、黄金微针等主流光电项目",
+    "introduction": "深耕光电联合美学抗衰，坚守自然高级审美。专注原生肌态唤醒，精准把控治疗层次，兼顾即时改善与长效抗衰，量身定制专属变美方案，雕琢自然灵动质感",
+    "approach": "",
+    "focus": [
+      "面部抗衰",
+      "肌肤综合修护",
+      "半岛光电项目",
+      "钻石超塑",
+      "热拉提",
+      "超皮秒",
+      "黄金微针"
+    ],
+    "certifications": [
+      "半岛超声炮认证医师",
+      "赛诺龙超皮秒认证医师",
+      "半岛逆时针认证医师",
+      "赛诺龙5G MPP认证医师",
+      "Inmode钻石超塑认证医师",
+      "科医人逐光之星认证医师",
+      "飞顿黄金热拉提2.0认证医师"
+    ],
+    "memberships": [],
+    "posterQuote": "精准分层抗衰，定制自然高级美"
   }
 ];
-const clinics=[{"id":"c1","city":"北京","name":"医联珍美医疗美容","address":"北京市朝阳区 · 呼家楼","hours":"10:00 - 19:00","image":""},{"id":"c2","city":"北京","name":"医联吉美医疗美容","address":"北京市朝阳区 · 双井","hours":"11:00 - 20:00","image":""},{"id":"c3","city":"北京","name":"医联致美医疗美容","address":"北京市朝阳区 · 工体","hours":"10:00 - 19:00","image":""}];
-module.exports={categories,quickCategories,products,doctors,clinics,heroImage:'/assets/images/home-portrait-v2.jpg',clinicImage:'/assets/images/clinic-lobby.jpg',avatarImage:''};
+const clinics=[
+  {
+    "id": "c1",
+    "city": "北京",
+    "name": "医联珍美医疗美容",
+    "address": "北京市朝阳区 · 呼家楼",
+    "hours": "10:00 - 19:00",
+    "image": "",
+    "mapImage": "/assets/images/clinics/zhenmei-map.jpg"
+  },
+  {
+    "id": "c3",
+    "city": "北京",
+    "name": "医联致美医疗美容",
+    "address": "北京市朝阳区 · 工体",
+    "hours": "10:00 - 20:30",
+    "image": "",
+    "mapImage": "/assets/images/clinics/zhimei-map.jpg"
+  }
+];
+const productDetailImages={
+  "imp20261102-017": "/assets/product-detail/product-detail-20261103-04.jpg",
+  "imp20261102-042": "/assets/product-detail/product-detail-20261103-05.jpg",
+  "imp20261102-040": "/assets/product-detail/product-detail-20261103-06.jpg",
+  "imp20261102-057": "/assets/product-detail/product-detail-20261103-07.jpg",
+  "imp20261102-016": "/assets/product-detail/product-detail-20261103-extra-runbaiyan.jpg",
+  "imp20261102-071": "/assets/product-detail/product-detail-20261103-new-ha-15.jpg",
+  "imp20261102-061": "/assets/product-detail/product-detail-20261103-new-ha-25.jpg",
+  "imp20261102-065": "/assets/product-detail/product-detail-20261103-11.jpg",
+  "imp20261102-068": "/assets/product-detail/product-detail-20261103-11.jpg",
+  "imp20261102-055": "/assets/product-detail/product-detail-20261103-12.jpg",
+  "p10": "/assets/product-detail/product-detail-20261103-12.jpg",
+  "imp20261102-026": "/assets/product-detail/product-detail-20261103-extra-xinfuyuan.jpg",
+  "imp20261102-039": "/assets/product-detail/product-detail-20261103-15.jpg",
+  "imp20261102-019": "/assets/product-detail/product-detail-20261103-16.jpg",
+  "imp20261102-030": "/assets/product-detail/product-detail-20261103-16.jpg",
+  "imp20261102-036": "/assets/product-detail/product-detail-20261103-17.jpg",
+  "imp20261102-035": "/assets/product-detail/product-detail-20261103-18.jpg",
+  "imp20261102-054": "/assets/product-detail/product-detail-20261103-19.jpg",
+  "imp20261102-025": "/assets/product-detail/product-detail-20261103-20.jpg",
+  "imp20261102-032": "/assets/product-detail/product-detail-20261103-23.jpg",
+  "imp20261102-031": "/assets/product-detail/product-detail-20261103-24.jpg",
+  "imp20261102-018": "/assets/product-detail/product-detail-20261103-25.jpg",
+  "imp20261102-015": "/assets/product-detail/product-detail-20261103-extra-broda.jpg",
+  "imp20261102-045": "/assets/product-detail/product-detail-20261103-new-ha-panda.jpg",
+  "imp20261102-058": "/assets/product-detail/product-detail-20261103-new-hydrafacial.jpg",
+  "imp20261102-029": "/assets/product-detail/product-detail-20261103-new-milk-peel.jpg",
+  "imp20261102-050": "/assets/product-detail/product-detail-20261103-new-milk-peel.jpg",
+  "imp20261102-052": "/assets/product-detail/product-detail-20261103-new-milk-peel.jpg",
+  "imp20261102-066": "/assets/product-detail/product-detail-20261103-new-milk-peel.jpg"
+};
+const environmentPhotos=[
+  "/assets/images/environment/environment-01.jpg",
+  "/assets/images/environment/environment-02.jpg",
+  "/assets/images/environment/environment-04.jpg",
+  "/assets/images/environment/environment-05.jpg",
+  "/assets/images/environment/environment-06.jpg",
+  "/assets/images/environment/environment-08.jpg",
+  "/assets/images/environment/environment-09.jpg"
+];
+const clinicLogos={c1: '/assets/images/clinics/zhenmei.jpg', c3: '/assets/images/clinics/zhimei.jpg'};
+module.exports={clinicLogos,environmentPhotos,productDetailImages,categories,quickCategories,products,doctors,clinics,heroImage:'/assets/images/home-portrait-v2.jpg',clinicImage:'/assets/images/clinic-lobby.jpg',avatarImage:''};

@@ -1,1 +1,82 @@
-<view class="page records"><brand-header back="{{true}}" title="{{title}}"></brand-header><view wx:if="{{type === 'orders'}}"><scroll-view scroll-x="{{true}}" class="status-tabs"><view class="status-inner"><button wx:for="{{statuses}}" wx:key="*this" class="status-tab {{status === item ? 'active' : ''}}" bindtap="changeStatus" data-status="{{item}}">{{item}}</button></view></scroll-view><view class="pad"><view wx:for="{{orders}}" wx:key="id" class="panel record-card"><view class="between"><text class="small muted">{{item.id}}</text><text class="primary">{{item.status}}</text></view><view wx:if="{{item.activityName}}" class="order-activity-label"><text class="pill">{{item.activityName}}</text></view><view wx:for="{{item.items}}" wx:for-item="product" wx:key="id" class="order-product"><text>{{product.name}}</text><text class="muted">× {{product.quantity}}</text></view><view class="between"><text class="small muted">{{item.date}}</text><text class="price"><text class="price-symbol">¥</text>{{item.displayTotal}}</text></view><button class="secondary-button order-button" bindtap="orderInfo">查看演示订单</button></view><view wx:if="{{!orders.length}}" class="empty"><view class="empty-title">暂无{{status === '全部' ? '' : status}}订单</view><text>你喜欢的美丽项目在这里等你</text><button class="primary-button" bindtap="goCategory">看看项目</button></view></view></view><view wx:elif="{{type === 'appointments'}}" class="pad"><view wx:for="{{appointments}}" wx:key="id" class="panel record-card"><view class="between"><text class="section-title">{{item.project}}</text><text class="primary">{{item.status}}</text></view><view class="record-description">{{item.date}} {{item.time}}<text decode="{{true}}">&#10;</text>{{item.clinic}} · {{item.doctor}}</view><button wx:if="{{item.status !== '已取消'}}" class="secondary-button" bindtap="cancelAppointment" data-id="{{item.id}}">取消预约</button></view><view wx:if="{{!appointments.length}}" class="empty"><view class="empty-title">还没有预约记录</view><text>从一次专业咨询开始</text><button class="primary-button" bindtap="goService">了解医生与门店</button></view></view><view wx:elif="{{type === 'giftbalance'}}" class="pad"><view class="points-summary panel"><text class="muted">赠送余额（元）</text><view>{{giftBalance}}</view><text class="small muted">赠送余额展示</text></view><view class="empty"><view class="empty-title">暂无余额明细</view><text>机构赠送的余额与使用记录将在这里显示</text></view></view><view wx:elif="{{type === 'points'}}" class="pad"><view class="points-summary panel"><text class="muted">当前BP积分</text><view>{{points}}</view><text class="small muted">积分数据为页面示例</text></view><view class="section-head"><text class="section-title">积分明细</text></view><view class="panel record-card between" wx:for="{{pointTransactions}}" wx:key="id"><view><view>{{item.title}}</view><text class="small muted">本地演示积分记录</text></view><text class="{{item.amount >= 0 ? 'primary' : 'muted'}}">{{item.amountLabel}}</text></view></view><view wx:elif="{{type === 'coupons'}}" class="pad"><view wx:for="{{coupons}}" wx:key="id" class="coupon panel"><view class="coupon-amount"><text>¥</text>{{item.amount}}</view><view><view class="coupon-name">{{item.name}}</view><view class="muted small">{{item.rule}} · 示例优惠券</view></view></view><view wx:if="{{!coupons.length}}" class="empty"><view class="empty-title">还没有可用优惠券</view><text>去领券中心领取一份美丽礼遇</text></view><button class="secondary-button" bindtap="goCouponCenter">前往领券中心</button><view class="notice">已领取优惠券保存在当前设备，真实订单核销待接入。</view></view><view wx:elif="{{type === 'clinics'}}" class="pad"><view wx:for="{{clinics}}" wx:key="id" class="panel record-card"><view class="section-title">{{item.name}}</view><view class="record-description">{{item.address}}<text decode="{{true}}">&#10;</text>营业时间 {{item.hours}}</view><button class="secondary-button" bindtap="goService">查看服务</button></view></view><view wx:elif="{{type === 'settings'}}" class="pad"><view class="panel settings-panel"><button bindtap="about" class="settings-row">关于医联·好美<ui-icon name="chevron" size="26"></ui-icon></button><button bindtap="reset" class="settings-row">清除本地演示数据<ui-icon name="chevron" size="26"></ui-icon></button></view><view class="notice">当前框架不采集微信用户资料，不接入真实登录、交易或机构系统。</view></view></view>
+<view class="page records"><brand-header back="{{true}}" title="{{title}}"></brand-header><view wx:if="{{type === 'orders'}}"><scroll-view scroll-x="{{true}}" class="status-tabs"><view class="status-inner"><button wx:for="{{statuses}}" wx:key="*this" class="status-tab {{status === item ? 'active' : ''}}" bindtap="changeStatus" data-status="{{item}}">{{item}}</button></view></scroll-view><view class="pad"><view wx:for="{{orders}}" wx:key="id" class="panel record-card"><view class="between"><text class="small muted">{{item.id}}</text><text class="primary">{{item.status}}</text></view><view wx:if="{{item.activityName}}" class="order-activity-label"><text class="pill">{{item.activityName}}</text></view><view wx:for="{{item.items}}" wx:for-item="product" wx:key="id" class="order-product"><text>{{product.name}}</text><text class="muted">× {{product.quantity}}</text></view><view class="between"><text class="small muted">{{item.date}}</text><text class="price"><text class="price-symbol">¥</text>{{item.displayTotal}}</text></view><button class="secondary-button order-button" bindtap="orderInfo">查看演示订单</button></view><view wx:if="{{!orders.length}}" class="empty order-empty">
+  <view class="order-empty-illustration"><ui-icon name="order" size="68"></ui-icon></view>
+  <view class="empty-title">暂无{{status === '全部' ? '' : status}}订单</view>
+  <view class="stacked-action"><button class="primary-button" bindtap="goCategory">看看项目</button><text>你喜欢的美丽项目在这里等你</text></view></view></view></view><view wx:elif="{{type === 'giftbalance'}}" class="pad"><view class="points-summary panel"><text class="muted">赠送余额（元）</text><view>{{giftBalance}}</view><text class="small muted">赠送余额展示</text></view><view class="empty"><view class="empty-title">暂无余额明细</view><text>机构赠送的余额与使用记录将在这里显示</text></view></view><view wx:elif="{{type === 'points'}}" class="pad"><view class="points-summary panel"><text class="muted">当前BP积分</text><view>{{points}}</view><text class="small muted">积分数据为页面示例</text></view><view class="section-head"><text class="section-title">积分明细</text></view><view class="panel record-card between" wx:for="{{pointTransactions}}" wx:key="id"><view><view>{{item.title}}</view><text class="small muted">本地演示积分记录</text></view><text class="{{item.amount >= 0 ? 'primary' : 'muted'}}">{{item.amountLabel}}</text></view>
+<view class="panel record-card bp-explainer">
+  <view class="section-title">以美相赠，福利翻倍！</view>
+  <view>医联集团全新 BP 美丽积分体系正式上线，老带新享全额返积分福利。</view>
+  <view>BP（Beauty Point）是会员专属长效积分，长期有效，是你的变美储备金。</view>
+  <view class="section-title">一、两种攒分方式</view>
+  <view><text class="bp-strong">1. 到店消费攒分（全员通用）</text> 任意项目、产品实付消费，<text class="bp-strong">每消费 10 元 = 1BP</text>，无品类限制。</view>
+  <view><text class="bp-strong">2. 老客专属：老带新全额返 BP（核心福利）</text> 老会员推荐从未到店的新客完成首单，新客实付多少钱，你就等额拿到多少 BP。例：好友首消 3000 元，你直接到账 3000BP；推荐人数无上限，积分上不封顶，这是最快攒分渠道。</view>
+  <view class="section-title">二、积分怎么用</view>
+  <view><text class="bp-strong">1. 当下即可兑换</text>：积分商城免费换抗衰项目、医用护肤品，不用额外花钱。</view>
+  <view><text class="bp-strong">2. 未来权益预告</text>：后续将开放 BP 直接抵扣现金，积分可直接抵院内所有消费。</view>
+  <view class="section-title">三、活动五大优势</view>
+  <view>① 双渠道攒分，消费稳攒、推荐大额返分</view>
+  <view>② 老带新全额返分，远超常规 10:1 积分比例</view>
+  <view>③ 积分先兑项目好物，后续直接抵现金，用途持续升级</view>
+  <view>④ 积分长期有效，无过期压力，长期保值</view>
+  <view>⑤ 双向共赢：朋友安心变美，你收获海量福利。</view>
+  <view>把美好体验分享给闺蜜姐妹，每一笔消费都能积攒 BP；邀约新人还能拿到等额积分。等抵扣功能上线，积分直接当现金用，长期省下一大笔变美开支。马上转发专属邀请链接，开启消费 + 分享双攒福利！</view>
+</view></view><view wx:elif="{{type === 'coupons'}}" class="pad"><view wx:for="{{coupons}}" wx:key="id" class="coupon panel"><view class="coupon-amount"><text>¥</text>{{item.amount}}</view><view><view class="coupon-name">{{item.name}}</view><view class="muted small">{{item.rule}} · 示例优惠券</view></view></view><view wx:if="{{!coupons.length}}" class="empty"><view class="empty-title">还没有可用优惠券</view><text>去领券中心领取一份美丽礼遇</text></view><view class="stacked-action coupon-action"><button class="secondary-button" bindtap="goCouponCenter">前往领券中心</button><view class="notice">已领取优惠券保存在当前设备，真实订单核销待接入。</view></view></view><view wx:elif="{{type === 'environment'}}" class="pad">
+  <view class="panel record-card">
+    <view class="section-title">医院介绍</view>
+    <view class="hospital-intro">
+      <view class="hospital-intro-heading">医美界的 “安心质价比标杆”</view>
+      <view>医联连锁医美是我们的人生作品</view>
+      <view>旗下有医联致美、医联珍美两家门店</view>
+      <view class="hospital-intro-commitments">
+        <view>不玩信息差</view>
+        <view>不做非执业诊疗</view>
+        <view>不漠视疼痛</view>
+        <view>不过度医美</view>
+      </view>
+      <view>我们致力于为每位顾客创造没有顾虑的选择</view>
+      <view>成为每一位朋友的生命伙伴</view>
+      <view class="hospital-intro-closing">在医联，所有不安都会被呵护。</view>
+    </view>
+    <view class="section-title">院内环境</view>
+    <image wx:for="{{environmentPhotos}}" wx:key="*this" class="clinic-environment-photo" src="{{item}}" mode="widthFix" lazy-load="{{index > 0}}" aria-label="院内环境图 {{index + 1}}"></image>
+  </view>
+</view><view wx:elif="{{type === 'clinics' || type === 'doctors'}}">
+  <view wx:if="{{type === 'clinics' && !clinicId}}" class="pad">
+    <view wx:for="{{clinics}}" wx:key="id" class="panel record-card">
+      <view class="clinic-identity"><image wx:if="{{item.logo}}" class="clinic-logo" src="{{item.logo}}" mode="aspectFit" aria-label="{{item.name}}标志"></image><view><view class="section-title">{{item.name}}</view><view class="record-description">{{item.address}}<text decode="{{true}}">&#10;</text>营业时间 {{item.hours}}</view></view></view>
+      <button class="secondary-button" data-id="{{item.id}}" bindtap="openClinic">查看详情</button>
+    </view>
+    <view wx:if="{{!clinics.length}}" class="record-description">暂无门店资料</view>
+  </view>
+  <view wx:elif="{{type === 'doctors' || clinic}}">
+    <view wx:if="{{clinic}}" class="pad">
+      <view class="panel clinic-cover-card">
+        <view wx:if="{{clinic.cover}}" class="clinic-cover"><image src="{{clinic.cover}}" mode="aspectFill" aria-label="{{clinic.name}}院区环境"></image></view>
+        <view class="clinic-cover-info">
+          <view class="section-title">{{clinic.name}}</view>
+          <view class="record-description">{{clinic.address}}<text decode="{{true}}">&#10;</text>营业时间 {{clinic.hours}}</view>
+          <video wx:if="{{clinic.videoUrl}}" class="clinic-detail-media" src="{{clinic.videoUrl}}" controls="{{true}}"></video>
+        </view>
+      </view>
+    </view>
+    <view class="pad doctor-directory-list">
+      <view wx:if="{{clinic}}" class="section-head"><view class="section-title">院区医生</view></view>
+      <button wx:for="{{directoryDoctors}}" wx:key="id" class="doctor-directory-card" data-id="{{item.id}}" bindtap="openDoctor" aria-label="查看{{item.name}}医生介绍">
+        <view class="doctor-directory-photo">
+          <image wx:if="{{item.image}}" src="{{item.image}}" mode="aspectFit"></image>
+          <media-placeholder wx:else label="医生头像" kind="doctor"></media-placeholder>
+        </view>
+        <view class="doctor-directory-info">
+          <view class="doctor-directory-heading">
+            <view class="doctor-directory-name">Dr.{{item.name}}</view>
+            <text wx:if="{{item.license}}" class="doctor-directory-badge">医认证</text>
+            <view class="doctor-directory-more">更多<ui-icon name="chevron" size="22"></ui-icon></view>
+          </view>
+          <view wx:if="{{item.clinicName}}" class="doctor-directory-clinic">{{item.clinicName}}</view>
+          <view wx:if="{{item.focusSummary}}" class="doctor-directory-focus">擅长项目：{{item.focusSummary}}</view>
+        </view>
+      </button>
+      <view wx:if="{{!directoryDoctors.length}}" class="record-description">暂无医生资料</view>
+    </view>
+  </view>
+  <view wx:else class="pad record-description">暂无门店资料</view>
+</view><view wx:elif="{{type === 'settings'}}" class="pad"><view class="panel settings-panel"><button bindtap="about" class="settings-row">关于医联·好美<ui-icon name="chevron" size="26"></ui-icon></button><button bindtap="reset" class="settings-row">清除本地演示数据<ui-icon name="chevron" size="26"></ui-icon></button></view><view class="notice">当前框架不采集微信用户资料，不接入真实登录、交易或机构系统。</view></view></view>

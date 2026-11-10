@@ -9,3 +9,5 @@
 .product-image{height:370rpx}
 
 .deposit-label{font-size:20rpx;color:#8991a5;margin-right:8rpx;white-space:nowrap}
+
+.product-image{height:336rpx;aspect-ratio:1/1}.product-image .media-image{object-position:center}

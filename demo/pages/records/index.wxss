@@ -1,3 +1,39 @@
 .status-tabs{background:white}.status-inner{display:flex;min-width:100%;padding:0 26rpx;white-space:nowrap}.status-tab{display:inline-block;padding:26rpx 23rpx;font-size:25rpx;color:#8b94a5;border-bottom:4rpx solid transparent;flex-shrink:0}.status-tab.active{color:var(--primary);border-color:var(--primary);font-weight:600}.record-card{padding:28rpx;margin-top:24rpx}.order-product{display:flex;justify-content:space-between;padding:26rpx 0}.order-button{font-size:24rpx;padding:14rpx 24rpx;margin-top:24rpx}.record-description{color:#929aaa;font-size:25rpx;line-height:1.9;margin:22rpx 0}.record-card .section-title{font-size:29rpx}.record-card .secondary-button{font-size:25rpx;padding:16rpx 24rpx}.points-summary{margin-top:30rpx;padding:52rpx 30rpx;text-align:center}.points-summary>view{font-size:80rpx;font-weight:650;color:var(--primary);margin:12rpx 0}.coupon{display:flex;align-items:center;gap:30rpx;margin-top:26rpx;padding:38rpx 30rpx;border-left:7rpx solid #9295ff}.coupon-amount{min-width:150rpx;font-size:64rpx;color:var(--primary);font-weight:600}.coupon-amount text{font-size:30rpx;margin-right:4rpx}.coupon-name{font-size:29rpx;font-weight:500;margin-bottom:10rpx}.settings-panel{margin-top:28rpx;padding:0 28rpx}.settings-row{display:flex;align-items:center;justify-content:space-between;width:100%;padding:30rpx 0;border-bottom:1rpx solid #f0f2f7}.settings-row:last-child{border-bottom:0}
 
 .order-activity-label{margin-top:18rpx}
+
+.clinic-detail-media{display:block;width:100%;border-radius:16rpx;margin-top:18rpx}
+.doctor-directory-list{padding-top:20rpx;padding-bottom:24rpx}
+.doctor-directory-card{display:flex;align-items:stretch;gap:20rpx;width:100%;padding:20rpx;margin:0 0 16rpx;background:white;border-radius:22rpx;text-align:left}
+.doctor-directory-photo{position:relative;flex:0 0 138rpx;height:180rpx;overflow:hidden;border-radius:14rpx;background:#e9edf4}
+.doctor-directory-photo image{display:block;width:100%;height:100%;object-fit:contain}
+.doctor-directory-info{display:flex;flex:1;min-width:0;flex-direction:column;align-items:stretch}
+.doctor-directory-heading{display:flex;align-items:center;gap:8rpx;flex-wrap:wrap}
+.doctor-directory-name{font-size:29rpx;font-weight:600}
+.doctor-directory-badge{padding:2rpx 8rpx;border-radius:12rpx;background:#e8eeff;color:#486bd3;font-size:18rpx}
+.doctor-directory-more{display:flex;align-items:center;margin-left:auto;color:var(--muted);font-size:21rpx;white-space:nowrap}
+.doctor-directory-clinic{color:var(--muted);font-size:22rpx;margin-top:6rpx}
+.doctor-directory-focus{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;margin-top:auto;padding-top:10rpx;font-size:23rpx;line-height:1.45}
+.clinic-environment-photo{display:block;width:100%;height:auto;margin-top:18rpx;border-radius:16rpx}
+.hospital-intro{margin:22rpx 0 36rpx;color:#404858;font-size:27rpx;line-height:1.8}
+.hospital-intro-heading{margin-bottom:14rpx;color:#20232b;font-size:32rpx;font-weight:700}
+.hospital-intro-commitments{margin:18rpx 0;padding:14rpx 20rpx;border-radius:12rpx;background:#f4f6fa;color:#20232b}
+.hospital-intro-closing{margin-top:14rpx;font-weight:600}
+
+.clinic-identity{display:flex;align-items:center;gap:20rpx;margin-bottom:20rpx}
+.clinic-logo{flex:none;width:112rpx;height:112rpx;border-radius:14rpx}
+.clinic-identity .record-description{margin-bottom:0}
+
+.bp-explainer{margin-top:28rpx;color:#525b6c;line-height:1.8}
+.bp-explainer>view+view{margin-top:14rpx}
+.bp-explainer .section-title{color:var(--ink);margin-top:26rpx}
+.bp-explainer .section-title:first-child{margin-top:0}
+.bp-strong{font-weight:600;color:var(--ink)}
+.clinic-cover-card{margin-top:24rpx;overflow:hidden}
+.clinic-cover{position:relative;width:100%;padding-top:75%;overflow:hidden;background:#e9edf3}
+.clinic-cover image{position:absolute;inset:0;width:100%;height:100%;display:block}
+.clinic-cover-info{padding:24rpx}
+.clinic-cover-info .record-description{margin-bottom:0}
+
+.order-empty-illustration{display:flex;align-items:center;justify-content:center;width:132rpx;height:132rpx;margin:0 auto 24rpx;border-radius:36rpx;background:#ecebff;color:#7770c9}
+.order-empty .stacked-action{margin-top:36rpx}

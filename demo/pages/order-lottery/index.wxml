@@ -1,0 +1,15 @@
+<view class="page feature-page welfare-page"><brand-header title="抽奖活动" back="{{true}}"></brand-header><view class="pad"><view wx:if="{{connected}}"><view class="welfare-intro"><text class="pill">A LITTLE SURPRISE</text><view class="top-title">{{rules.lottery.title}}</view><text class="sub-title">留住每一份期待，收获一份小惊喜</text></view><view class="feature-panel panel" wx:if="{{rules.lottery.requireProof}}"><view class="section-title">提交参与凭证</view><view class="card-note welfare-note">请填写社群订单说明，并上传订单截图。审核通过后可参与抽奖；不符合要求的凭证无法参与。</view><textarea class="proof-description" placeholder="填写订单说明或订单编号" value="{{description}}" bindinput="describe" maxlength="500"></textarea><button class="proof-upload" bindtap="chooseImage"><ui-icon name="image" size="42"></ui-icon><text>{{imageReady ? '截图已选择 · 点击更换' : '上传订单截图'}}</text><text class="small">PNG / JPG / WebP · 3MB以内</text></button><button class="secondary-button" bindtap="submitProof" disabled="{{busy}}">提交审核</button><view class="proof-status" wx:for="{{proofs}}" wx:key="id"><view class="between"><text>{{item.description}}</text><text class="pill">{{item.label}}</text></view><view class="card-note" wx:if="{{item.reviewNote}}">{{item.reviewNote}}</view></view></view><view class="feature-panel panel"><view class="section-title">九宫格抽奖</view>
+<view class="lottery-grid">
+  <block wx:for="{{board}}" wx:key="slot">
+    <button wx:if="{{item.slot === 4}}" class="lottery-start" bindtap="draw" disabled="{{busy || !lotteryState || !lotteryState.active || lotteryState.remaining === 0}}">{{busy ? '抽奖中' : lotteryState && lotteryState.active ? '参与抽奖' : '暂未开放'}}</button>
+    <view wx:else class="lottery-cell {{item.slot === activeSlot ? 'lottery-cell-active' : ''}}"><text>{{item.name}}</text></view>
+  </block>
+</view>
+<view wx:if="{{boardCount > 1}}" class="between lottery-pager">
+  <button class="secondary-button" bindtap="changeBoard" data-step="-1" disabled="{{busy || boardIndex === 0}}">上一组</button>
+  <text>{{boardIndex + 1}} / {{boardCount}}</text>
+  <button class="secondary-button" bindtap="changeBoard" data-step="1" disabled="{{busy || boardIndex + 1 === boardCount}}">下一组</button>
+</view>
+<view wx:if="{{lotteryState}}" class="lottery-chances">剩余抽奖次数 {{lotteryState.remaining === null ? '不限' : lotteryState.remaining}}</view>
+<view wx:if="{{rules.lottery.startDate}}" class="card-note welfare-note">{{rules.lottery.startDate}} 至 {{rules.lottery.endDate}} · 每单 {{rules.lottery.drawsPerOrder}} 次</view>
+<view wx:if="{{drawResult}}" class="lottery-result">{{drawResult.type === 'none' ? '本次结果' : '恭喜中奖'}} · {{drawResult.prizeName}}</view><view class="card-note welfare-note">当前为抽奖演示，奖品仅登记</view><view class="proof-status" wx:for="{{draws}}" wx:key="id"><view class="between"><text>{{item.prizeName}}</text><text class="muted">{{item.status === 'valid' ? '有效' : '已失效'}}</text></view></view></view></view><view wx:else class="empty"><view class="empty-title">{{loading ? '正在加载福利' : '后台暂未连接'}}</view><text>{{error}}</text><button wx:if="{{!loading}}" class="secondary-button" bindtap="retry">重新连接</button></view></view></view>

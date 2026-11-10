@@ -2,15 +2,24 @@
 
 /* 以等比缩放统一人像构图，保留原图比例。 */
 .doctor-photo,.doctor-profile-photo{position:relative;overflow:hidden;background:linear-gradient(135deg,#e8ebf1,#f4f6f9)}
-.doctor-portrait{position:absolute;max-width:none!important;width:100%;height:100%;left:0;top:0;object-fit:cover;object-position:center top}
-.doctor-portrait.portrait-d1{width:180%;height:180%;left:-40%;top:-14%}
-.doctor-portrait.portrait-d2{width:120%;height:120%;left:-10%;top:2%}
-.doctor-portrait.portrait-d3{width:155%;height:155%;left:-27.5%;top:-6%}
+.doctor-portrait{position:absolute;max-width:none!important;width:100%;height:100%;left:0;top:0;object-fit:contain;object-position:center}
 
 .doctor-info,.featured .doctor-info{padding:18rpx 12rpx;text-align:center}
 
-/* 地图使用用户提供的原始截图，界面内裁切显示并统一冷灰蓝色调。 */
 .service .clinic-map{height:244rpx;margin:0 -20rpx;overflow:hidden;background:#e7ebf4}
-.service .clinic-map-image{position:absolute;left:0;top:-560rpx;width:100%;height:auto;filter:grayscale(.65) saturate(.35) contrast(.74) brightness(1.08);opacity:.92}
-.service .clinic-map-tint{position:absolute;inset:0;background:linear-gradient(180deg,rgba(225,231,244,.1),rgba(233,237,246,.25));pointer-events:none}
-.service .map-source-note{position:absolute;left:20rpx;bottom:12rpx;padding:3rpx 8rpx;border-radius:6rpx;background:rgba(246,248,252,.86);color:#8792a7;font-size:17rpx;line-height:1.5}
+
+.doctor-deck{height:390rpx}.doctor-dots{flex-wrap:wrap}.doctor-clinic-tag{display:inline-block;margin-top:8rpx;padding:4rpx 12rpx;border-radius:20rpx;background:#efefff;color:#5655bb;font-size:20rpx}
+
+.service .service-doctor-head{margin-top:38rpx;align-items:center}
+.service .service-doctor-head .service-heading{margin:0;font-size:34rpx;white-space:normal}
+.service .service-doctor-head .more{flex-shrink:0;margin-left:12rpx}
+.service .clinic-details{text-align:left;justify-content:center;min-width:0}
+.service .clinic-video{display:block;margin-top:24rpx;width:100%;height:360rpx;border-radius:24rpx;overflow:hidden;background:#e9edf4}
+.service .clinic-video-empty{display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:26rpx}
+.service .doctor-deck{touch-action:pan-y;user-select:none}
+
+.service .clinic-map-scroll{width:100%;scroll-snap-type:x mandatory}
+.service .clinic-map-track{display:flex;gap:14rpx}
+.service .clinic-map-slide{flex:0 0 94%;min-width:0;box-sizing:border-box;scroll-snap-align:start}
+.service .clinic-map{height:244rpx;margin:0 -20rpx;overflow:hidden}
+.service .clinic-map-placeholder{display:flex;height:100%;flex-direction:column;align-items:center;justify-content:center;gap:8rpx;color:var(--muted);font-size:22rpx}

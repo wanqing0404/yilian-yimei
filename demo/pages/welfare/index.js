@@ -1,2 +1,43 @@
-const remote=require('../../utils/remote');
-Page(remote.page({data:{tab:'checkin',connected:false,loading:true,busy:false,rules:null,customer:null,days:[],stages:[],description:'',imageReady:false,proofs:[],draws:[]},onLoad(q){this.setData({tab:q.tab||'checkin'});},onShow(){this.loadRemote();},changeTab(e){this.setData({tab:e.currentTarget.dataset.tab});},loadRemote(){remote.refresh().then(()=>{const b=remote.get(),r=b.rules,c=b.customer;const latest=c.checkins[0];const streak=latest?latest.streak:0;this.setData({connected:true,loading:false,rules:r,customer:c,days:r.checkin.schedule.map((n,i)=>({day:i+1,points:n,done:c.checkedInToday&&i<=(streak-1)%r.checkin.schedule.length})),stages:r.activity.stages.map(s=>Object.assign({},s,{lit:c.activityProgress>=s.threshold,claimed:c.claims.some(x=>x.stageId===s.id&&x.activityId===r.activity.id)})),proofs:c.proofs.map(p=>Object.assign({},p,{label:({pending:'审核中',approved:'已通过',rejected:'未通过'})[p.status]})),draws:c.draws});}).catch(e=>this.setData({connected:false,loading:false,error:e.message}));},run(path,body,message){if(this.data.busy)return;this.setData({busy:true});remote.request(path,'POST',body||{}).then(r=>{wx.showToast({title:typeof message==='function'?message(r):message,icon:'none'});this.loadRemote();}).catch(e=>wx.showToast({title:e.message,icon:'none'})).finally(()=>this.setData({busy:false}));},checkin(){this.run('customer/checkin',{},r=>'签到成功 +'+r.record.points+' BP');},claim(e){this.run('customer/activity/claim',{stageId:e.currentTarget.dataset.id},'奖励已领取');},describe(e){this.setData({description:e.detail.value});},chooseImage(){wx.chooseMedia({count:1,mediaType:['image'],sourceType:['album'],success:r=>{const file=r.tempFiles[0];if(file.size>3000000){wx.showToast({title:'请选择小于3MB的图片',icon:'none'});return;}wx.getFileSystemManager().readFile({filePath:file.tempFilePath,encoding:'base64',success:r=>{this.proofBase64=r.data;this.setData({imageReady:true});},fail:()=>wx.showToast({title:'图片读取失败',icon:'none'})});}});},submitProof(){if(this.data.busy)return;if(!this.proofBase64||!this.data.description.trim()){wx.showToast({title:'请填写说明并上传订单截图',icon:'none'});return;}this.setData({busy:true});remote.request('customer/uploads','POST',{base64:this.proofBase64}).then(r=>remote.request('customer/proofs','POST',{imageId:r.imageId,description:this.data.description})).then(()=>{this.proofBase64='';this.setData({description:'',imageReady:false});wx.showToast({title:'已提交，等待审核',icon:'none'});this.loadRemote();}).catch(e=>wx.showToast({title:e.message,icon:'none'})).finally(()=>this.setData({busy:false}));},draw(){const proof=this.data.proofs.find(p=>p.status==='approved');this.run('customer/lottery/draw',{proofId:proof?proof.id:null},r=>r.prizeName);},retry(){this.loadRemote();}}));
+const remote = require('../../utils/remote');
+const catalogue = require('../../utils/data');
+
+Page(remote.page({
+  data: { connected: false, loading: true, busy: false, rules: null, customer: null,
+    stages: [], inviteGuest: false, demoAuthorized: false },
+  onLoad(query) {
+    if (query?.tab === 'lottery') {
+      wx.redirectTo({ url: '/pages/order-lottery/index' });
+      return;
+    }
+    this.setData({ inviteGuest: query?.invited === '1' });
+  },
+  onShow() {
+    this.loadRemote();
+  },
+  async loadRemote() {
+    try {
+      await remote.refresh();
+      const { rules, customer } = remote.get();
+      const stages = rules.activity.stages.map(stage => ({
+        ...stage, lit: customer.activityProgress >= stage.threshold,
+        claimed: customer.claims.some(claim => claim.stageId === stage.id && claim.activityId === rules.activity.id)
+      }));
+      this.setData({ connected: true, loading: false, rules, customer, stages });
+    } catch (error) {
+      this.setData({ connected: false, loading: false, error: error.message });
+    }
+  },
+  claim(event) {
+    this.run('customer/activity/claim', { stageId: event.currentTarget.dataset.id }, '奖励已领取');
+  },
+  run(path,body,message){if(this.data.busy)return;this.setData({busy:true});remote.request(path,'POST',body||{}).then(r=>{wx.showToast({title:typeof message==='function'?message(r):message,icon:'none'});this.loadRemote();}).catch(e=>wx.showToast({title:e.message,icon:'none'})).finally(()=>this.setData({busy:false}));},
+  onShareAppMessage(){return {title:this.data.rules?.activity?.title||'邀请有礼',path:'/pages/welfare/index?invited=1',imageUrl:'/assets/images/invite-friends-10bp.jpg'};},
+authorizeDemo(){this.setData({demoAuthorized:true});},
+purchaseDemo(){
+  const products=catalogue.products.filter(product=>!product.hidden&&product.price>0).slice(0,6);
+  if(!products.length){wx.showToast({title:'暂无演示商品',icon:'none'});return;}
+  wx.showActionSheet({itemList:products.map(p=>p.name),success:choice=>{
+    const product=products[choice.tapIndex];
+    this.run('customer/invite/demo-purchase',{productId:product.id,authorized:this.data.demoAuthorized},()=>{this.setData({inviteGuest:false,demoAuthorized:false});return '演示好友已加入列表';});
+  }});
+},retry(){this.loadRemote();}}));
