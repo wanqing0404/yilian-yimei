@@ -1,0 +1,230 @@
+{
+  "retrieved_at": "2026-11-06",
+  "skills": [
+    {
+      "name": "ui-ux-pro-max",
+      "repository": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "b7d5353e0130feb8c5574ef1251f8a1db1873ccb",
+      "path": ".claude/skills/ui-ux-pro-max/"
+    },
+    {
+      "name": "frontend-design",
+      "repository": "https://github.com/anthropics/skills",
+      "commit": "ca45fc496a3436251f191354091d557da31c15b5",
+      "path": "skills/frontend-design/"
+    },
+    {
+      "name": "web-design-guidelines",
+      "repository": "https://github.com/vercel-labs/agent-skills",
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/web-design-guidelines/"
+    }
+  ],
+  "files": [
+    {
+      "path": ".agents/skills/ui-ux-pro-max/SKILL.md",
+      "upstream_git_blob_sha": "23cdf0466e10ed460627ca9c0a68984b1a6bf98b"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/app-interface.csv",
+      "upstream_git_blob_sha": "95e328c807a23be02c9c32c736d0fa19109c6076"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/catalog-summary.json",
+      "upstream_git_blob_sha": "11b0aa18f863ce45baeb7402e34a2cc24da4df57"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/charts.csv",
+      "upstream_git_blob_sha": "c6f4f875fd5b34379f24dbb541539492366a1058"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/colors.csv",
+      "upstream_git_blob_sha": "5d2bf7389105f8a824b504b57cc93c00dc1d7e0a"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/data-provenance.json",
+      "upstream_git_blob_sha": "2373307696bb67ea9d395ad384950ea8ad0b3615"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/google-font-licenses.json",
+      "upstream_git_blob_sha": "3ac2c34e80665bc902e265c52ab6c27b1654524c"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/google-fonts.csv",
+      "upstream_git_blob_sha": "d7f87e3e0159b1caba083b9954793d9852256aa0"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/icons.csv",
+      "upstream_git_blob_sha": "cfc3f1eccd7e5aee15d8d70f86d8fa17ba737958"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/landing.csv",
+      "upstream_git_blob_sha": "34858160aa2789c49dca274d48bb116d51dd3f0a"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/motion.csv",
+      "upstream_git_blob_sha": "8e0ca9ceb0e4cd4832aee60ac74713e1e1830de8"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/phosphor-icons-upstream.json",
+      "upstream_git_blob_sha": "ec1d76b8117ccbfdce5df214bf0d993e41a75318"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/products.csv",
+      "upstream_git_blob_sha": "f5f747335cdc631359ed6705ede2906e93d41b19"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/react-performance.csv",
+      "upstream_git_blob_sha": "425a8e76c6b3bae40e8c633ffbf7ad6222c9f73a"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/angular.csv",
+      "upstream_git_blob_sha": "5a1878dbee2b3c55c6468cbb18699b84d1a8c4d2"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/astro.csv",
+      "upstream_git_blob_sha": "1fd2492420b20a0b311295ab883597fadb8245a6"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/avalonia.csv",
+      "upstream_git_blob_sha": "c67f4117105865587eda9020c57d8c209f3a929a"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/flutter.csv",
+      "upstream_git_blob_sha": "731805c4076bd9f2755ca4bd7def5be6f6df7e9c"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv",
+      "upstream_git_blob_sha": "9089eb0fc821ff0c8d135f8ee503be345e8fcb84"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/javafx.csv",
+      "upstream_git_blob_sha": "744bd80f437f12bfb5bb9c84630a58022604675a"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv",
+      "upstream_git_blob_sha": "8daa0b8f9a2ca3f0f1711664d9d677cd1c38dd9e"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/laravel.csv",
+      "upstream_git_blob_sha": "ed11b0fba457e02857f996d1542fb0b8e1271756"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/nextjs.csv",
+      "upstream_git_blob_sha": "acdaf097dff26ba0d3b22ab4544bf6169c87afd4"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv",
+      "upstream_git_blob_sha": "f6b8000e106aaf421a61da45134e35c8f03e18c6"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv",
+      "upstream_git_blob_sha": "ceab9cf3358d2788af0bd7dc14cb3fab769740d0"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/react-native.csv",
+      "upstream_git_blob_sha": "a5aea45dc1d0341b11ee42076a86db842d4d2a19"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/react.csv",
+      "upstream_git_blob_sha": "fe8f001e695a978733449e04e99d7135af0f1bf3"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/shadcn.csv",
+      "upstream_git_blob_sha": "0e8bedf3084e7a40d6310bcd3011c437efcb1700"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/svelte.csv",
+      "upstream_git_blob_sha": "51684fe70448e15333cd16207db7da8aea0508e6"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/swiftui.csv",
+      "upstream_git_blob_sha": "ea9b95e8922e663b2adf27a7346e2c2f44c7a215"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/threejs.csv",
+      "upstream_git_blob_sha": "f62286320038beabbdc5e11e07ca2818d8e959a4"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/uno.csv",
+      "upstream_git_blob_sha": "9cab32326b4ad3a3cf43451a3c24553a41126cc1"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/uwp.csv",
+      "upstream_git_blob_sha": "04a84ea092a7657fef11e5daa97982be52dc6f59"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/vue.csv",
+      "upstream_git_blob_sha": "83997c515775170f22b638635aae0a67a46dfc87"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/winui.csv",
+      "upstream_git_blob_sha": "107ecead11728a83ec0ea10d815a9d1f43a35792"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/stacks/wpf.csv",
+      "upstream_git_blob_sha": "4e88d6750833a74f85ba487cf2b8f4ff6ebd2f4a"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/styles.csv",
+      "upstream_git_blob_sha": "7ed18d6ef06557b9a6f2285b87b458fd71e4722f"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/typography.csv",
+      "upstream_git_blob_sha": "70d107d107de30150863c965767320ec33ef29ad"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/ui-reasoning.csv",
+      "upstream_git_blob_sha": "8931d4c809f8e22ddac00ce612ce0c35f34a59b6"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/data/ux-guidelines.csv",
+      "upstream_git_blob_sha": "4e7d52b296537a03513b18b2c3f2b946cc802051"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/references/pro-rules.md",
+      "upstream_git_blob_sha": "b2ce233287e37ec9ca13476c4014b922e9d5a0e9"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/references/quick-reference.md",
+      "upstream_git_blob_sha": "7acc7e7540ca6981d878a90aae4455c1638e2385"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/scripts/core.py",
+      "upstream_git_blob_sha": "02a3eee65462772dda9e0e56ae1dc1531b68c85a"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/scripts/design_system.py",
+      "upstream_git_blob_sha": "d5fe1575f00d839f919603bd09b44fe7e9def4fb"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/scripts/reasoning_contract.py",
+      "upstream_git_blob_sha": "63652a666b130c249ea1e2954316f1ac8a5a73d5"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/scripts/search.py",
+      "upstream_git_blob_sha": "9ce5e402c29f265e435481791a87cdef73c4a903"
+    },
+    {
+      "path": ".agents/skills/ui-ux-pro-max/scripts/validate_data.py",
+      "upstream_git_blob_sha": "8b6c7941f6ad3e51cb9d412b11185133e7763001"
+    },
+    {
+      "path": ".agents/skills/frontend-design/LICENSE.txt",
+      "upstream_git_blob_sha": "f433b1a53f5b830a205fd2df78e2b34974656c7b"
+    },
+    {
+      "path": ".agents/skills/frontend-design/SKILL.md",
+      "upstream_git_blob_sha": "a5333457c414d20d625f307df945842c0952ecc3"
+    },
+    {
+      "path": ".agents/skills/web-design-guidelines/SKILL.md",
+      "upstream_git_blob_sha": "ceae92ab319216a68274168fba9b63b998b65997"
+    }
+  ],
+  "guidelines_snapshot": {
+    "source": "https://github.com/vercel-labs/web-interface-guidelines/blob/main/command.md",
+    "retrieved_at": "2026-11-06",
+    "ref": "main (snapshot; refresh before review)"
+  }
+}
